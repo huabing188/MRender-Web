@@ -44,3 +44,6 @@ public/assets/hdri/hdrimaps/
 
 # 本地验证产物（截图/报告，非源码）
 verify/
+
+# 本地工作日志（私人笔记，不公开）
+.workbuddy-ai/
