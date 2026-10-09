@@ -1,5 +1,5 @@
 // 左侧 Library 资源库（七子库页签）
-import React, { useMemo } from "react";
+import React, { useEffect, useMemo, useReducer } from "react";
 import { useSceneStore } from "../store/sceneStore";
 import { BUILTIN_MATERIALS, ENV_PRESETS, BUILTIN_TEXTURES, generateProceduralTexture } from "../core/defaultScene";
 import { ICONS } from "./common";
@@ -42,6 +42,14 @@ function SphereThumb({ color, metallic, roughness }: { color: [number, number, n
 }
 
 export function LibraryPanel() {
+  // 商业 HDRI 素材是运行时探测追加的，探测完成后需刷新列表
+  const [, refreshEnvs] = useReducer((x: number) => x + 1, 0);
+  useEffect(() => {
+    const h = () => refreshEnvs();
+    window.addEventListener("mrender:env-presets-changed", h);
+    return () => window.removeEventListener("mrender:env-presets-changed", h);
+  }, []);
+
   const libraryTab = useSceneStore((s) => s.libraryTab);
   const setLibraryTab = useSceneStore((s) => s.setLibraryTab);
   const scene = useSceneStore((s) => s.scene);

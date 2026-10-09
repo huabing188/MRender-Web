@@ -299,6 +299,35 @@ export const ENV_PRESETS: EnvPreset[] = [
   { id: "ph_blue_photo_studio", name: "PH 蓝棚 Blue Studio", hdrUrl: "/assets/hdri/ph_blue_photo_studio.hdr", thumbUrl: "/assets/hdri/thumbs/ph_blue_photo_studio.png", bg: [0.07, 0.08, 0.12] },
   { id: "ph_brown_photostudio_01", name: "PH 棕棚 Brown Studio", hdrUrl: "/assets/hdri/ph_brown_photostudio_01.hdr", thumbUrl: "/assets/hdri/thumbs/ph_brown_photostudio_01.png", bg: [0.1, 0.08, 0.07] },
   { id: "ph_abandoned_bakery", name: "PH 旧面包房 Bakery", hdrUrl: "/assets/hdri/ph_abandoned_bakery.hdr", thumbUrl: "/assets/hdri/thumbs/ph_abandoned_bakery.png", bg: [0.09, 0.08, 0.07] },
-  // —— ISO 批量入库：Dosch Chrome Studio（产品级）+ HDRIMAPS（场景级）——
-  ...ISO_ENV_PRESETS,
 ];
+
+/**
+ * 商业 HDRI（Dosch Chrome Studio / HDRI Maps）为**可选素材**，不随仓库分发
+ * （商业授权，公开分发会侵权）。
+ *
+ * 启动时探测一次：本地若存在这些素材则自动追加进环境库；不存在则静默跳过，
+ * 避免出现点不开的死预设。
+ *
+ * 想启用：把素材拷回 `public/assets/hdri/dosch/` 与 `public/assets/hdri/hdrimaps/`
+ * 即可，无需改代码。
+ */
+export async function probeIsoEnvironments(): Promise<boolean> {
+  if (isoEnvProbed) return isoEnvReady;
+  isoEnvProbed = true;
+  const probe = ISO_ENV_PRESETS[0];
+  if (!probe?.hdrUrl) return false;
+  try {
+    const res = await fetch(probe.hdrUrl, { method: "HEAD" });
+    if (!res.ok) return false;
+    ENV_PRESETS.push(...ISO_ENV_PRESETS);
+    isoEnvReady = true;
+    // 通知 UI 刷新环境库列表
+    window.dispatchEvent(new CustomEvent("mrender:env-presets-changed"));
+    return true;
+  } catch {
+    return false; // 素材不存在，静默跳过
+  }
+}
+
+let isoEnvProbed = false;
+let isoEnvReady = false;

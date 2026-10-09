@@ -1,7 +1,6 @@
 // 模型导入：OBJ / GLTF / GLB / STL / PLY / FBX / 3DM
 // 全部使用 three.js 官方 Loader + McNeel 官方 Rhino3dmLoader，零自研解析
 import * as THREE from "three";
-import { GLTFExporter } from "three/examples/jsm/exporters/GLTFExporter.js";
 import { GLTFLoader } from "three/examples/jsm/loaders/GLTFLoader.js";
 import { OBJLoader } from "three/examples/jsm/loaders/OBJLoader.js";
 import { STLLoader } from "three/examples/jsm/loaders/STLLoader.js";
@@ -16,25 +15,92 @@ export const SUPPORTED_LABEL =
   ".obj, .gltf, .glb, .stl, .ply, .fbx, .3dm (Rhino)";
 
 /**
- * 把一个 three 对象导出为 GLB 的 data URL（供「打散」后生成完全独立的子部件模型）。
- * GLTFExporter 是 three 官方自带，零自研。
+ * 「打散」生成的独立子部件：直接把烘焙后的几何体序列化为紧凑 data URL，
+ * 不再走 GLTFExporter（对大量网格串行导出既重又易在 SwiftShader 下 OOM/崩溃）。
+ * 仅存 position / normal / index；材质由材质系统按 materialId 另行配置。
+ * 头部固定 12 字节（3×uint32，保证 4 字节对齐）：
+ *   [0] vertexCount  [4] flags(bit0=hasNormal,bit1=hasIndex)  [8] indexCount
  */
-export function exportToGLB(object: THREE.Object3D): Promise<string> {
-  return new Promise((resolve, reject) => {
-    const exporter = new GLTFExporter();
-    exporter.parse(
-      object,
-      (result) => {
-        const blob = new Blob([result as ArrayBuffer], { type: "model/gltf-binary" });
-        const reader = new FileReader();
-        reader.onload = () => resolve(reader.result as string);
-        reader.onerror = () => reject(reader.error);
-        reader.readAsDataURL(blob);
-      },
-      (err) => reject(err),
-      { binary: true }
-    );
-  });
+const GEOM_PREFIX = "data:mrender-geom;base64,";
+
+export function isBakedGeometryDataURL(source: string): boolean {
+  return typeof source === "string" && source.startsWith(GEOM_PREFIX);
+}
+
+export function bakeGeometryToDataURL(geometry: THREE.BufferGeometry): string {
+  const pos = geometry.getAttribute("position") as THREE.BufferAttribute | undefined;
+  if (!pos) return "";
+  const nor = geometry.getAttribute("normal") as THREE.BufferAttribute | undefined;
+  const index = geometry.getIndex();
+  const hasNor = !!nor;
+  const hasIdx = !!index;
+  const headerSize = 12;
+  const posBytes = pos.count * 3 * 4;
+  const norBytes = hasNor ? nor!.count * 3 * 4 : 0;
+  const idxBytes = hasIdx ? index!.count * 4 : 0; // Uint32 统一，兼容 >65535 顶点
+  const total = headerSize + posBytes + norBytes + idxBytes;
+  const buf = new ArrayBuffer(total);
+  const dv = new DataView(buf);
+  let o = 0;
+  dv.setUint32(o, pos.count, true); o += 4;
+  dv.setUint32(o, (hasNor ? 1 : 0) | (hasIdx ? 2 : 0), true); o += 4;
+  dv.setUint32(o, hasIdx ? index!.count : 0, true); o += 4;
+  const pf = new Float32Array(buf, headerSize, pos.count * 3);
+  pf.set(pos.array as ArrayLike<number>);
+  let off = headerSize + posBytes;
+  if (hasNor) {
+    const nf = new Float32Array(buf, off, nor!.count * 3);
+    nf.set(nor!.array as ArrayLike<number>);
+    off += norBytes;
+  }
+  if (hasIdx) {
+    const idxArr = index!.array as ArrayLike<number>;
+    const iu = new Uint32Array(buf, off, index!.count);
+    for (let i = 0; i < index!.count; i++) iu[i] = idxArr[i]; // 升位 Uint16/Uint32
+    off += idxBytes;
+  }
+  // ArrayBuffer → base64（分块，避免 String.fromCharCode 参数过多）
+  const bytes = new Uint8Array(buf);
+  let binary = "";
+  const CHUNK = 0x4000;
+  for (let i = 0; i < bytes.length; i += CHUNK) {
+    binary += String.fromCharCode(...bytes.subarray(i, i + CHUNK));
+  }
+  return GEOM_PREFIX + btoa(binary);
+}
+
+/** 把 bakeGeometryToDataURL 生成的 data URL 还原为独立 Mesh（材质留给材质系统按 materialId 配置）。 */
+export function decodeGeometryDataURL(source: string): THREE.Mesh | null {
+  if (!isBakedGeometryDataURL(source)) return null;
+  const b64 = source.slice(GEOM_PREFIX.length);
+  const binary = atob(b64);
+  const bytes = new Uint8Array(binary.length);
+  for (let i = 0; i < binary.length; i++) bytes[i] = binary.charCodeAt(i);
+  const buf = bytes.buffer;
+  const dv = new DataView(buf);
+  let o = 0;
+  const vcount = dv.getUint32(o, true); o += 4;
+  const flags = dv.getUint32(o, true); o += 4;
+  const hasNor = (flags & 1) === 1;
+  const hasIdx = (flags & 2) === 2;
+  const idxCount = dv.getUint32(o, true); o += 4;
+  const geom = new THREE.BufferGeometry();
+  const pf = new Float32Array(buf, 12, vcount * 3);
+  geom.setAttribute("position", new THREE.BufferAttribute(pf, 3));
+  let off = 12 + vcount * 3 * 4;
+  if (hasNor) {
+    const nf = new Float32Array(buf, off, vcount * 3);
+    geom.setAttribute("normal", new THREE.BufferAttribute(nf, 3));
+    off += vcount * 3 * 4;
+  }
+  if (hasIdx) {
+    const iu = new Uint32Array(buf, off, idxCount);
+    geom.setIndex(new THREE.BufferAttribute(new Uint32Array(iu), 1));
+  }
+  geom.computeBoundingBox();
+  geom.computeBoundingSphere();
+  const mesh = new THREE.Mesh(geom, new THREE.MeshStandardMaterial({ roughness: 0.6, metalness: 0 }));
+  return mesh;
 }
 
 function extOf(name: string): string {

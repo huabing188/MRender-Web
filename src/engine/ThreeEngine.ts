@@ -16,7 +16,7 @@ import { OutputPass } from "three/examples/jsm/postprocessing/OutputPass.js";
 import type { SceneJSON, LightData, MaterialData, LabelData, SceneObjectData, LightPinData } from "../core/types";
 import { buildDemoBottle, ENV_PRESETS } from "../core/defaultScene";
 import { MaterialFactory } from "./materials";
-import { importModelFile, exportToGLB } from "./importers";
+import { importModelFile, bakeGeometryToDataURL, decodeGeometryDataURL, isBakedGeometryDataURL } from "./importers";
 import { useSceneStore, nextUid } from "../store/sceneStore";
 import { getEngine } from "../ui/engineBridge";
 
@@ -767,12 +767,13 @@ export class ThreeEngine {
       // 烘焙为独立部件：世界矩阵进几何 + 几何体重心归到局部原点 + 对象位置=重心
       // （既保持在原世界位置不散落变形，又让 Gizmo/轴心落在物件正中央）
       const clone = bakePart(mesh);
-      // 导出为独立 GLB（彻底脱离原模型，互不干扰）
-      const dataUrl = await exportToGLB(clone);
+      // 直接把烘焙后的几何体序列化为 data URL（彻底脱离原模型，互不干扰）。
+      // 不再串行跑 GLTFExporter：对大量网格既重又易在 SwiftShader 下 OOM/崩溃。
+      // 该 data URL 同时作为缓存键与保存/加载序列化来源。
+      const dataUrl = bakeGeometryToDataURL(clone.geometry);
       // 关键：把已烘焙的网格直接缓存，使 syncObjects 能「同步」构建部件，
       // 不再走 fetch→重新解析 的异步链路（SwiftShader 下极慢且易丢件）。
-      // GLB data URL 仍保留用于保存/加载序列化。
-      this.modelCache.set(dataUrl, clone.clone(true));
+      this.modelCache.set(dataUrl, clone);
       const stat = countTrianglesSafe(clone);
       parts.push({
         id: `obj_${Date.now().toString(36)}_${i}`,
@@ -785,7 +786,11 @@ export class ThreeEngine {
         preTransformed: true,
         stats: { triangles: stat.triangles, vertices: stat.vertices },
       });
+      // 每处理若干网格让出一次事件循环，避免长任务阻塞渲染线程
+      if (i % 8 === 7) await new Promise((r) => setTimeout(r, 0));
     }
+    // 原对象已被拆分成独立部件：释放其缓存（避免 34MB+ 原始模型常驻内存泄漏）
+    if (orig?.source) this.modelCache.delete(orig.source);
     // 一次性替换对象列表并记一步历史（原对象消失，生成若干独立部件）
     const finalObjs = store.scene.objects.filter((o) => o.id !== objectId).concat(parts);
     store.replaceObjects(finalObjs, parts[0]?.id);
@@ -889,6 +894,17 @@ export class ThreeEngine {
     if (!obj.source || !obj.source.startsWith("data:")) return;
     const cached = this.modelCache.get(obj.source);
     if (cached) return;
+    // 打散子部件：几何体直接序列化的 data URL，无需经 GLTF 解析，立即还原
+    if (isBakedGeometryDataURL(obj.source)) {
+      const mesh = decodeGeometryDataURL(obj.source);
+      if (mesh) {
+        mesh.userData.mrenderId = obj.id;
+        this.modelCache.set(obj.source, mesh);
+        this.syncScene(useSceneStore.getState().scene);
+        this.cb.onStatus?.(`已加载 ${obj.name}（打散部件）`);
+        return;
+      }
+    }
     try {
       const blob = await (await fetch(obj.source)).blob();
       const fileName = obj.name || "model";
@@ -1724,20 +1740,54 @@ export class ThreeEngine {
   }
 
   // ============ 白平衡 ============
-  private applyWhiteBalance(kelvin: number) {
+  /**
+   * 白平衡 → CSS filter 字符串。预览与导出共用同一份定义，
+   * 保证"看到的 == 导出的"。中性（6500K 附近）返回空串表示无需处理。
+   */
+  private whiteBalanceFilter(kelvin: number): string {
     const delta = kelvin - 6500;
-    if (Math.abs(delta) < 100) {
-      this.renderer.domElement.style.filter = "";
-      return;
-    }
+    if (Math.abs(delta) < 100) return "";
     if (delta < 0) {
       // 暖色：偏红黄
       const intensity = Math.min(1, Math.abs(delta) / 3500);
-      this.renderer.domElement.style.filter = `sepia(${(intensity * 0.25).toFixed(3)}) saturate(${(1 + intensity * 0.15).toFixed(3)})`;
-    } else {
-      // 冷色：偏蓝
-      const intensity = Math.min(1, delta / 2500);
-      this.renderer.domElement.style.filter = `hue-rotate(${(intensity * 20).toFixed(1)}deg) brightness(${(1 + intensity * 0.03).toFixed(3)})`;
+      return `sepia(${(intensity * 0.25).toFixed(3)}) saturate(${(1 + intensity * 0.15).toFixed(3)})`;
+    }
+    // 冷色：偏蓝
+    const intensity = Math.min(1, delta / 2500);
+    return `hue-rotate(${(intensity * 20).toFixed(1)}deg) brightness(${(1 + intensity * 0.03).toFixed(3)})`;
+  }
+
+  private applyWhiteBalance(kelvin: number) {
+    this.renderer.domElement.style.filter = this.whiteBalanceFilter(kelvin);
+  }
+
+  /**
+   * 把白平衡真实烘焙进导出图像素。
+   * 预览用的是 canvas 上的 CSS filter，而 toDataURL 取的是画布原始像素、
+   * 不含 CSS 滤镜 —— 必须在这里补上，否则导出图与预览不一致。
+   */
+  private async bakeWhiteBalance(url: string, mimeType: string): Promise<string> {
+    const kelvin = useSceneStore.getState().scene?.camera?.whiteBalance ?? 6500;
+    const filter = this.whiteBalanceFilter(kelvin);
+    if (!filter) return url;
+    try {
+      const img = new Image();
+      await new Promise<void>((resolve, reject) => {
+        img.onload = () => resolve();
+        img.onerror = () => reject(new Error("image decode failed"));
+        img.src = url;
+      });
+      const canvas = document.createElement("canvas");
+      canvas.width = img.naturalWidth || img.width;
+      canvas.height = img.naturalHeight || img.height;
+      const ctx = canvas.getContext("2d");
+      if (!ctx) return url;
+      ctx.filter = filter;
+      ctx.drawImage(img, 0, 0);
+      ctx.filter = "none";
+      return canvas.toDataURL(mimeType);
+    } catch {
+      return url; // 烘焙失败不应阻塞导出，退回原图
     }
   }
 
@@ -1846,12 +1896,12 @@ export class ThreeEngine {
         };
         tick();
       });
-      url = this.renderer.domElement.toDataURL(mimeType);
+      url = await this.bakeWhiteBalance(this.renderer.domElement.toDataURL(mimeType), mimeType);
       try { pt.dispose(); } catch { /* three-gpu-pathtracer 0.0.22 dispose 偶发空引用，忽略 */ }
     } catch (e) {
       console.error("路径追踪初始化失败，回退光栅化", e);
       this.composer.render();
-      url = this.renderer.domElement.toDataURL(mimeType);
+      url = await this.bakeWhiteBalance(this.renderer.domElement.toDataURL(mimeType), mimeType);
     } finally {
       this.shadowLight.castShadow = oldShadowCast;
       this.shadowLight.intensity = oldShadowInt;
@@ -1926,7 +1976,7 @@ export class ThreeEngine {
     this.grid.visible = false; // 出图不带网格
     this.axes.visible = false; // 出图不带坐标轴
     this.composer.render();
-    const url = this.renderer.domElement.toDataURL(mimeType);
+    const url = await this.bakeWhiteBalance(this.renderer.domElement.toDataURL(mimeType), mimeType);
     // 恢复
     this.setOutlineVisible(true);
     this.grid.visible = oldGrid;
@@ -2090,7 +2140,6 @@ function countTrianglesSafe(root: THREE.Object3D): { triangles: number; vertices
 
 /** 导入模型文件入口（UI 拖拽/选择调用），结果加入场景数据 */
 export async function addModelFromFile(file: File, onStatus?: (msg: string) => void, opts?: { explode?: boolean }) {
-  const { importModelFile } = await import("./importers");
   const result = await importModelFile(file);
   const reader = new FileReader();
   const dataUrl = await new Promise<string>((resolve, reject) => {
@@ -2110,17 +2159,19 @@ export async function addModelFromFile(file: File, onStatus?: (msg: string) => v
         const mesh = meshes[i];
         // 烘焙为独立部件（重心归原点 + 对象位置=重心 → 轴心在物件中央）
         const clone = bakePart(mesh);
-        const partUrl = await exportToGLB(clone);
-        getEngine()?.precacheModel(partUrl, clone.clone(true));
+        // 直接序列化烘焙后的几何体（不走 GLTFExporter，避免大量网格串行导出 OOM/崩溃）
+        const partUrl = bakeGeometryToDataURL(clone.geometry);
+        getEngine()?.precacheModel(partUrl, clone);
         const stat = countTrianglesSafe(clone);
         const id = `obj_${Date.now().toString(36)}_e${i}`;
         parts.push({
           id, name: `${baseName} / ${mesh.name || `Part_${i + 1}`}`, type: "mesh",
-          source: partUrl, sourceFormat: "glb",
+          source: partUrl, sourceFormat: "mrender-geom",
           transform: { position: [clone.position.x, clone.position.y, clone.position.z], rotation: [0, 0, 0], scale: [1, 1, 1] },
           materialId: DEFAULT_IMPORTED_MATERIAL, visible: true, preTransformed: true,
           stats: { triangles: stat.triangles, vertices: stat.vertices },
         });
+        if (i % 8 === 7) await new Promise((r) => setTimeout(r, 0));
       }
       const store = useSceneStore.getState();
       const finalObjs = store.scene.objects.concat(parts);

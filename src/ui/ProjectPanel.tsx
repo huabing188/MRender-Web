@@ -1,5 +1,5 @@
 // 右侧项目面板：六页签（场景 / 材质 / 环境 / 照明 / 相机 / 图像）
-import React from "react";
+import React, { useEffect, useReducer } from "react";
 import { useSceneStore } from "../store/sceneStore";
 import { ICONS, Section, SliderRow, ToggleRow, ColorRow, SelectRow, NumberRow, GroupLabel } from "./common";
 import { ENV_PRESETS, BUILTIN_MATERIALS, MATERIAL_TYPES } from "../core/defaultScene";
@@ -360,6 +360,14 @@ function LabelSection({ objectId, labels }: { objectId: string; labels: LabelDat
 
 /* ================= 环境页签 ================= */
 function EnvironmentTab() {
+  // 商业 HDRI 素材是运行时探测追加的，探测完成后需刷新列表
+  const [, refreshEnvs] = useReducer((x: number) => x + 1, 0);
+  useEffect(() => {
+    const h = () => refreshEnvs();
+    window.addEventListener("mrender:env-presets-changed", h);
+    return () => window.removeEventListener("mrender:env-presets-changed", h);
+  }, []);
+
   const env = useSceneStore((s) => s.scene.environment);
   const customEnvs = useSceneStore((s) => s.scene.customEnvironments);
   const lightPins = useSceneStore((s) => s.scene.lightPins);

@@ -10,6 +10,7 @@ import { Viewport } from "./ui/Viewport";
 import { ProjectPanel } from "./ui/ProjectPanel";
 import { StatusBar } from "./ui/StatusBar";
 import { parseKeyshotMaterialLibrary, readFileAsArrayBuffer } from "./engine/keyshotImport";
+import { probeIsoEnvironments } from "./core/defaultScene";
 
 export default function App() {
   const viewportRef = useRef<HTMLDivElement>(null);
@@ -50,6 +51,10 @@ export default function App() {
 
     // 初始同步（attach 里已做一次，这里保证后续）
     engine.syncScene(useSceneStore.getState().scene);
+
+    // 探测本地是否存有商业 HDRI 素材（Dosch / HDRI Maps）：
+    // 有则自动追加进环境库，没有则静默跳过，避免出现点不开的死预设。
+    void probeIsoEnvironments();
 
     const onResize = () => engine.onResize();
     window.addEventListener("resize", onResize);
