@@ -1,0 +1,31 @@
+import { chromium } from "/Users/huabinxu/.workbuddy/binaries/node/workspace/node_modules/playwright/index.mjs";
+import fs from "fs";
+const CHROME = "/Applications/Google Chrome.app/Contents/MacOS/Google Chrome";
+const URL = "http://localhost:5180/";
+const BOTTLE = "/Users/huabinxu/Desktop/codex文件/MRender/Resources/baijiu_bottle.obj";
+const OUT = "/Users/huabinxu/Desktop/workbuddy文档/MRender样张/瓶子实测";
+fs.mkdirSync(OUT, { recursive: true });
+function scaleObj(text, s){return text.split("\n").map(l=>{if(l.startsWith("v ")){const p=l.slice(2).trim().split(/\s+/).map(Number);return `v ${(p[0]*s).toFixed(4)} ${(p[1]*s).toFixed(4)} ${(p[2]*s).toFixed(4)}`;}return l;}).join("\n");}
+const scaled = scaleObj(fs.readFileSync(BOTTLE,"utf8"),90);
+const sleep=(ms)=>new Promise(r=>setTimeout(r,ms));
+(async()=>{
+  const browser=await chromium.launch({headless:true,executablePath:CHROME,args:["--use-gl=swiftshader","--no-sandbox","--disable-gpu-sandbox","--enable-unsafe-swiftshader","--disable-dev-shm-usage"]});
+  const page=await browser.newPage({viewport:{width:900,height:620}});
+  page.on("pageerror",e=>console.log("PAGEERR",e.message));
+  await page.goto(URL,{waitUntil:"domcontentloaded"});
+  await page.waitForFunction(()=>window.MRender&&window.MRender.getStore()&&document.querySelector("canvas"));
+  await sleep(1200);
+  await page.evaluate(()=>{[...window.MRender.getStore().scene.objects].forEach(o=>window.MRender.getStore().removeObject(o.id));});
+  await page.evaluate(async(objText)=>{const f=new File([objText],"baijiu_bottle_scaled.obj",{type:"text/plain"});await window.MRender.importModel(f,{explode:false});},scaled);
+  await page.waitForFunction(()=>window.MRender.getStore().scene.objects.some(x=>(x.name||"").toLowerCase().includes("baijiu_bottle")),{timeout:30000});
+  await sleep(600);
+  const id=await page.evaluate(()=>{const st=window.MRender.getStore();const o=st.scene.objects.find(x=>(x.name||"").toLowerCase().includes("baijiu_bottle"));st.updateObject(o.id,{position:[0,126,0]});window.MRender.setGridVisible(false);window.MRender.setAxesVisible(false);return o.id;});
+  await page.evaluate(({id})=>{const st=window.MRender.getStore();st.assignMaterial(id,"mat_glass");st.updateEnvironment({preset:"quarry",background:{mode:"color",color:[0.10,0.11,0.14]}});st.updateCamera({position:[0,250,470],target:[0,126,0],fov:34});},{id});
+  await sleep(2500);
+  await page.evaluate(()=>{const c=document.querySelector("canvas");const all=document.body.getElementsByTagName("*");for(const el of all){if(el===c)continue;if(c.contains(el)||el.contains(c))continue;el.style.display="none";}c.style.position="fixed";c.style.left="0";c.style.top="0";c.style.width="100vw";c.style.height="100vh";c.style.zIndex="99999";});
+  await sleep(200);
+  const p=`${OUT}/01-玻璃瓶-玻璃材质-采石场HDR.png`;
+  await page.screenshot({path:p});
+  console.log("SHOT",p);
+  await browser.close();
+})().catch(e=>{console.error("FATAL",e.message);process.exit(1);});

@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <title>MRender-Web</title>
+  </head>
+  <body>
+    <div id="root"></div>
+    <div id="errors" style="position:fixed; left:10px; top:10px; color:#ff6b6b; font:12px monospace; white-space:pre-wrap; z-index:9999;"></div>
+    <script>
+      window.addEventListener('error', function(e){
+        document.getElementById('errors').textContent += (e.message || e.error?.message || JSON.stringify(e)) + ' @ line ' + e.lineno + '\n';
+      });
+      window.addEventListener('unhandledrejection', function(e){
+        document.getElementById('errors').textContent += 'Promise: ' + (e.reason?.stack || e.reason || e) + '\n';
+      });
+    </script>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>

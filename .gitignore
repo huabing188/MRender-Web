@@ -1,0 +1,46 @@
+# 依赖
+node_modules/
+
+# 构建产物
+dist/
+*.tsbuildinfo
+
+# Vite 临时配置（构建残留）
+vite.config.ts.timestamp-*.mjs
+
+# 系统文件
+.DS_Store
+Thumbs.db
+
+# 本地环境变量
+.env
+.env.local
+.env.*.local
+
+# 编辑器
+.vscode/
+.idea/
+*.swp
+
+# 日志
+logs/
+*.log
+npm-debug.log*
+
+# ---------------------------------------------------------------------------
+# 商业授权 HDR 素材 — 不随仓库分发
+#
+# 原因：Dosch Design 与 HDRI Maps 的 HDRI 为商业授权，公开仓库分发会侵权。
+# 好消息：本项目代码对这些目录零引用，10 个内置环境预设全部来自
+#         Poly Haven (CC0) / three.js 官方 (MIT) / 自有 KeyShot 导出，
+#         因此缺失这两个目录不影响任何功能。
+#
+# 如果你本地已购买这些素材，直接拷回即可自动被环境库识别：
+#   public/assets/hdri/dosch/
+#   public/assets/hdri/hdrimaps/
+# ---------------------------------------------------------------------------
+public/assets/hdri/dosch/
+public/assets/hdri/hdrimaps/
+
+# 本地验证产物（截图/报告，非源码）
+verify/

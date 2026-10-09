@@ -1,0 +1,2015 @@
+{
+  "total": 200,
+  "badCount": 0,
+  "categories": {
+    "studio_soft": 10,
+    "studio_contrast": 10,
+    "outdoor_sky": 10,
+    "indoor_arch": 10,
+    "industrial_urban": 10
+  },
+  "selected": 47,
+  "records": [
+    {
+      "abs": "public/assets/hdri/dosch/Dosch.Design.HDRI.Chrome.Studio.Effects.Volume.1/HC/DH-301HC.hdr",
+      "rel": "dosch/Dosch.Design.HDRI.Chrome.Studio.Effects.Volume.1/HC/DH-301HC.hdr",
+      "cat": "studio_contrast",
+      "width": 2048,
+      "height": 1536,
+      "mean": 5406.970830082871,
+      "max": 16484,
+      "std": 6086.8287977593545
+    },
+    {
+      "abs": "public/assets/hdri/dosch/Dosch.Design.HDRI.Chrome.Studio.Effects.Volume.1/HC/DH-302HC.hdr",
+      "rel": "dosch/Dosch.Design.HDRI.Chrome.Studio.Effects.Volume.1/HC/DH-302HC.hdr",
+      "cat": "studio_contrast",
+      "width": 2048,
+      "height": 1536,
+      "mean": 6444.801634377247,
+      "max": 16476,
+      "std": 6604.468774547678
+    },
+    {
+      "abs": "public/assets/hdri/dosch/Dosch.Design.HDRI.Chrome.Studio.Effects.Volume.1/HC/DH-304HC.hdr",
+      "rel": "dosch/Dosch.Design.HDRI.Chrome.Studio.Effects.Volume.1/HC/DH-304HC.hdr",
+      "cat": "studio_contrast",
+      "width": 2048,
+      "height": 1536,
+      "mean": 6397.923665234168,
+      "max": 16893,
+      "std": 6350.903116669215
+    },
+    {
+      "abs": "public/assets/hdri/dosch/Dosch.Design.HDRI.Chrome.Studio.Effects.Volume.1/HC/DH-305HC.hdr",
+      "rel": "dosch/Dosch.Design.HDRI.Chrome.Studio.Effects.Volume.1/HC/DH-305HC.hdr",
+      "cat": "studio_contrast",
+      "width": 2048,
+      "height": 1536,
+      "mean": 4896.133188366854,
+      "max": 16893,
+      "std": 5772.615677811433
+    },
+    {
+      "abs": "public/assets/hdri/dosch/Dosch.Design.HDRI.Chrome.Studio.Effects.Volume.1/HC/DH-306HC.hdr",
+      "rel": "dosch/Dosch.Design.HDRI.Chrome.Studio.Effects.Volume.1/HC/DH-306HC.hdr",
+      "cat": "studio_contrast",
+      "width": 2048,
+      "height": 1536,
+      "mean": 6453.654789176128,
+      "max": 16893,
+      "std": 6480.567536666638
+    },
+    {
+      "abs": "public/assets/hdri/dosch/Dosch.Design.HDRI.Chrome.Studio.Effects.Volume.1/HC/DH-314HC.hdr",
+      "rel": "dosch/Dosch.Design.HDRI.Chrome.Studio.Effects.Volume.1/HC/DH-314HC.hdr",
+      "cat": "studio_contrast",
+      "width": 2048,
+      "height": 1536,
+      "mean": 4523.259219913007,
+      "max": 16740.486399999998,
+      "std": 5867.032727066572
+    },
+    {
+      "abs": "public/assets/hdri/dosch/Dosch.Design.HDRI.Chrome.Studio.Effects.Volume.1/HC/DH-316HC.hdr",
+      "rel": "dosch/Dosch.Design.HDRI.Chrome.Studio.Effects.Volume.1/HC/DH-316HC.hdr",
+      "cat": "studio_contrast",
+      "width": 2048,
+      "height": 1536,
+      "mean": 3656.9266024099447,
+      "max": 16826.7856,
+      "std": 5402.731276343718
+    },
+    {
+      "abs": "public/assets/hdri/dosch/Dosch.Design.HDRI.Chrome.Studio.Effects.Volume.1/HC/DH-317HC.hdr",
+      "rel": "dosch/Dosch.Design.HDRI.Chrome.Studio.Effects.Volume.1/HC/DH-317HC.hdr",
+      "cat": "studio_contrast",
+      "width": 2048,
+      "height": 1536,
+      "mean": 5662.451932124382,
+      "max": 16732.3488,
+      "std": 6621.39961829892
+    },
+    {
+      "abs": "public/assets/hdri/dosch/Dosch.Design.HDRI.Chrome.Studio.Effects.Volume.1/HC/DH-318HC.hdr",
+      "rel": "dosch/Dosch.Design.HDRI.Chrome.Studio.Effects.Volume.1/HC/DH-318HC.hdr",
+      "cat": "studio_contrast",
+      "width": 2048,
+      "height": 1536,
+      "mean": 4036.3179136789095,
+      "max": 16846.0496,
+      "std": 5391.703826498731
+    },
+    {
+      "abs": "public/assets/hdri/dosch/Dosch.Design.HDRI.Chrome.Studio.Effects.Volume.1/HC/DH-332HC.hdr",
+      "rel": "dosch/Dosch.Design.HDRI.Chrome.Studio.Effects.Volume.1/HC/DH-332HC.hdr",
+      "cat": "studio_contrast",
+      "width": 2048,
+      "height": 1536,
+      "mean": 5935.25233963937,
+      "max": 15499.999999999998,
+      "std": 6439.122994084378
+    },
+    {
+      "abs": "public/assets/hdri/dosch/Dosch.Design.HDRI.Chrome.Studio.Effects.Volume.1/HC/DH-335HC.hdr",
+      "rel": "dosch/Dosch.Design.HDRI.Chrome.Studio.Effects.Volume.1/HC/DH-335HC.hdr",
+      "cat": "studio_contrast",
+      "width": 2048,
+      "height": 1536,
+      "mean": 5615.296562439923,
+      "max": 16853,
+      "std": 6781.009190787699
+    },
+    {
+      "abs": "public/assets/hdri/dosch/Dosch.Design.HDRI.Chrome.Studio.Effects.Volume.1/HC/DH-337HC.hdr",
+      "rel": "dosch/Dosch.Design.HDRI.Chrome.Studio.Effects.Volume.1/HC/DH-337HC.hdr",
+      "cat": "studio_contrast",
+      "width": 2048,
+      "height": 1536,
+      "mean": 6971.787761648474,
+      "max": 15468,
+      "std": 6636.899836037671
+    },
+    {
+      "abs": "public/assets/hdri/dosch/Dosch.Design.HDRI.Chrome.Studio.Effects.Volume.1/HC/DH-338HC.hdr",
+      "rel": "dosch/Dosch.Design.HDRI.Chrome.Studio.Effects.Volume.1/HC/DH-338HC.hdr",
+      "cat": "studio_contrast",
+      "width": 2048,
+      "height": 1536,
+      "mean": 6217.755028104576,
+      "max": 16877,
+      "std": 6760.614913131987
+    },
+    {
+      "abs": "public/assets/hdri/dosch/Dosch.Design.HDRI.Chrome.Studio.Effects.Volume.1/HC/DH-340HC.hdr",
+      "rel": "dosch/Dosch.Design.HDRI.Chrome.Studio.Effects.Volume.1/HC/DH-340HC.hdr",
+      "cat": "studio_contrast",
+      "width": 2048,
+      "height": 1536,
+      "mean": 5430.367543358154,
+      "max": 15524,
+      "std": 6249.1798852124075
+    },
+    {
+      "abs": "public/assets/hdri/dosch/Dosch.Design.HDRI.Chrome.Studio.Effects.Volume.1/HC/DH-341HC.hdr",
+      "rel": "dosch/Dosch.Design.HDRI.Chrome.Studio.Effects.Volume.1/HC/DH-341HC.hdr",
+      "cat": "studio_contrast",
+      "width": 2048,
+      "height": 1536,
+      "mean": 5042.695660725204,
+      "max": 15524,
+      "std": 6300.475779302423
+    },
+    {
+      "abs": "public/assets/hdri/dosch/Dosch.Design.HDRI.Chrome.Studio.Effects.Volume.1/HC/DH-347HC.hdr",
+      "rel": "dosch/Dosch.Design.HDRI.Chrome.Studio.Effects.Volume.1/HC/DH-347HC.hdr",
+      "cat": "studio_contrast",
+      "width": 2048,
+      "height": 1536,
+      "mean": 6534.606510326507,
+      "max": 15524,
+      "std": 6244.670115427389
+    },
+    {
+      "abs": "public/assets/hdri/dosch/Dosch.Design.HDRI.Chrome.Studio.Effects.Volume.1/HC/DH-348HC.hdr",
+      "rel": "dosch/Dosch.Design.HDRI.Chrome.Studio.Effects.Volume.1/HC/DH-348HC.hdr",
+      "cat": "studio_contrast",
+      "width": 2048,
+      "height": 1536,
+      "mean": 6184.077610286553,
+      "max": 17359,
+      "std": 6440.610051811944
+    },
+    {
+      "abs": "public/assets/hdri/dosch/Dosch.Design.HDRI.Chrome.Studio.Effects.Volume.1/HC/DH-351HC.hdr",
+      "rel": "dosch/Dosch.Design.HDRI.Chrome.Studio.Effects.Volume.1/HC/DH-351HC.hdr",
+      "cat": "studio_contrast",
+      "width": 2048,
+      "height": 1536,
+      "mean": 4350.320680737451,
+      "max": 17303,
+      "std": 6004.539368149831
+    },
+    {
+      "abs": "public/assets/hdri/dosch/Dosch.Design.HDRI.Chrome.Studio.Effects.Volume.1/HC/DH-352HC.hdr",
+      "rel": "dosch/Dosch.Design.HDRI.Chrome.Studio.Effects.Volume.1/HC/DH-352HC.hdr",
+      "cat": "studio_contrast",
+      "width": 2048,
+      "height": 1536,
+      "mean": 2745.18848303951,
+      "max": 15878,
+      "std": 4598.124725044902
+    },
+    {
+      "abs": "public/assets/hdri/dosch/Dosch.Design.HDRI.Chrome.Studio.Effects.Volume.1/HC/DH-353HC.hdr",
+      "rel": "dosch/Dosch.Design.HDRI.Chrome.Studio.Effects.Volume.1/HC/DH-353HC.hdr",
+      "cat": "studio_contrast",
+      "width": 2048,
+      "height": 1536,
+      "mean": 4111.451908866527,
+      "max": 17279,
+      "std": 5843.431938533064
+    },
+    {
+      "abs": "public/assets/hdri/dosch/Dosch.Design.HDRI.Chrome.Studio.Effects.Volume.1/HC/DH-358HC.hdr",
+      "rel": "dosch/Dosch.Design.HDRI.Chrome.Studio.Effects.Volume.1/HC/DH-358HC.hdr",
+      "cat": "studio_contrast",
+      "width": 2048,
+      "height": 1536,
+      "mean": 5509.663506307541,
+      "max": 17660,
+      "std": 6699.393188985268
+    },
+    {
+      "abs": "public/assets/hdri/dosch/Dosch.Design.HDRI.Chrome.Studio.Effects.Volume.1/HC/DH-360HC.hdr",
+      "rel": "dosch/Dosch.Design.HDRI.Chrome.Studio.Effects.Volume.1/HC/DH-360HC.hdr",
+      "cat": "studio_contrast",
+      "width": 2048,
+      "height": 1536,
+      "mean": 2867.7832019726156,
+      "max": 17548,
+      "std": 5419.20493831121
+    },
+    {
+      "abs": "public/assets/hdri/dosch/Dosch.Design.HDRI.Chrome.Studio.Effects.Volume.1/HC/DH-363HC.hdr",
+      "rel": "dosch/Dosch.Design.HDRI.Chrome.Studio.Effects.Volume.1/HC/DH-363HC.hdr",
+      "cat": "studio_contrast",
+      "width": 2048,
+      "height": 1536,
+      "mean": 1008.9686745801919,
+      "max": 17749,
+      "std": 2822.6331402091164
+    },
+    {
+      "abs": "public/assets/hdri/dosch/Dosch.Design.HDRI.Chrome.Studio.Effects.Volume.1/HC/DH-365HC.hdr",
+      "rel": "dosch/Dosch.Design.HDRI.Chrome.Studio.Effects.Volume.1/HC/DH-365HC.hdr",
+      "cat": "studio_contrast",
+      "width": 2048,
+      "height": 1536,
+      "mean": 3113.6757928131897,
+      "max": 17917,
+      "std": 6086.863229773431
+    },
+    {
+      "abs": "public/assets/hdri/dosch/Dosch.Design.HDRI.Chrome.Studio.Effects.Volume.1/HC/DH-366HC.hdr",
+      "rel": "dosch/Dosch.Design.HDRI.Chrome.Studio.Effects.Volume.1/HC/DH-366HC.hdr",
+      "cat": "studio_contrast",
+      "width": 2048,
+      "height": 1536,
+      "mean": 1552.5038816092795,
+      "max": 16468,
+      "std": 3655.7568616287467
+    },
+    {
+      "abs": "public/assets/hdri/dosch/Dosch.Design.HDRI.Chrome.Studio.Effects.Volume.1/HC/DH-369HC.hdr",
+      "rel": "dosch/Dosch.Design.HDRI.Chrome.Studio.Effects.Volume.1/HC/DH-369HC.hdr",
+      "cat": "studio_contrast",
+      "width": 2048,
+      "height": 1536,
+      "mean": 4532.4993013937155,
+      "max": 17917,
+      "std": 6688.881634766997
+    },
+    {
+      "abs": "public/assets/hdri/dosch/Dosch.Design.HDRI.Chrome.Studio.Effects.Volume.1/HC/DH-414HC.hdr",
+      "rel": "dosch/Dosch.Design.HDRI.Chrome.Studio.Effects.Volume.1/HC/DH-414HC.hdr",
+      "cat": "studio_contrast",
+      "width": 2048,
+      "height": 1536,
+      "mean": 3610.5305480386983,
+      "max": 16116.1806,
+      "std": 4535.165504526728
+    },
+    {
+      "abs": "public/assets/hdri/dosch/Dosch.Design.HDRI.Chrome.Studio.Effects.Volume.1/HC/DH-415HC.hdr",
+      "rel": "dosch/Dosch.Design.HDRI.Chrome.Studio.Effects.Volume.1/HC/DH-415HC.hdr",
+      "cat": "studio_contrast",
+      "width": 2048,
+      "height": 1536,
+      "mean": 5823.782042639058,
+      "max": 15645.6656,
+      "std": 5964.344542382609
+    },
+    {
+      "abs": "public/assets/hdri/dosch/Dosch.Design.HDRI.Chrome.Studio.Effects.Volume.1/HC/DH-417HC.hdr",
+      "rel": "dosch/Dosch.Design.HDRI.Chrome.Studio.Effects.Volume.1/HC/DH-417HC.hdr",
+      "cat": "studio_contrast",
+      "width": 2048,
+      "height": 1536,
+      "mean": 6465.597326509992,
+      "max": 15597.6574,
+      "std": 6242.2325831389
+    },
+    {
+      "abs": "public/assets/hdri/dosch/Dosch.Design.HDRI.Chrome.Studio.Effects.Volume.1/HC/DH-418HC.hdr",
+      "rel": "dosch/Dosch.Design.HDRI.Chrome.Studio.Effects.Volume.1/HC/DH-418HC.hdr",
+      "cat": "studio_contrast",
+      "width": 2048,
+      "height": 1536,
+      "mean": 6233.18677538592,
+      "max": 15650.0628,
+      "std": 5867.160898731492
+    },
+    {
+      "abs": "public/assets/hdri/dosch/Dosch.Design.HDRI.Chrome.Studio.Effects.Volume.1/HC/DH-420HC.hdr",
+      "rel": "dosch/Dosch.Design.HDRI.Chrome.Studio.Effects.Volume.1/HC/DH-420HC.hdr",
+      "cat": "studio_contrast",
+      "width": 2048,
+      "height": 1536,
+      "mean": 5167.692728278093,
+      "max": 15677.5326,
+      "std": 5615.016253966487
+    },
+    {
+      "abs": "public/assets/hdri/dosch/Dosch.Design.HDRI.Chrome.Studio.Effects.Volume.1/HC/DH-430HC.hdr",
+      "rel": "dosch/Dosch.Design.HDRI.Chrome.Studio.Effects.Volume.1/HC/DH-430HC.hdr",
+      "cat": "studio_contrast",
+      "width": 2048,
+      "height": 1536,
+      "mean": 5799.423590362018,
+      "max": 16294.677199999998,
+      "std": 6739.192471808576
+    },
+    {
+      "abs": "public/assets/hdri/dosch/Dosch.Design.HDRI.Chrome.Studio.Effects.Volume.1/HC/DH-442HC.hdr",
+      "rel": "dosch/Dosch.Design.HDRI.Chrome.Studio.Effects.Volume.1/HC/DH-442HC.hdr",
+      "cat": "studio_contrast",
+      "width": 2048,
+      "height": 1536,
+      "mean": 1564.886766083453,
+      "max": 16612.2756,
+      "std": 2615.6068520723434
+    },
+    {
+      "abs": "public/assets/hdri/dosch/Dosch.Design.HDRI.Chrome.Studio.Effects.Volume.1/HC/DH-446HC.hdr",
+      "rel": "dosch/Dosch.Design.HDRI.Chrome.Studio.Effects.Volume.1/HC/DH-446HC.hdr",
+      "cat": "studio_contrast",
+      "width": 2048,
+      "height": 1536,
+      "mean": 1833.1461950181558,
+      "max": 16331.550799999997,
+      "std": 3223.649080443214
+    },
+    {
+      "abs": "public/assets/hdri/dosch/Dosch.Design.HDRI.Chrome.Studio.Effects.Volume.1/HC/DH-447HC.hdr",
+      "rel": "dosch/Dosch.Design.HDRI.Chrome.Studio.Effects.Volume.1/HC/DH-447HC.hdr",
+      "cat": "studio_contrast",
+      "width": 2048,
+      "height": 1536,
+      "mean": 3645.5912402305203,
+      "max": 16585.7636,
+      "std": 5285.059710322264
+    },
+    {
+      "abs": "public/assets/hdri/dosch/Dosch.Design.HDRI.Chrome.Studio.Effects.Volume.1/LB/DH-315LB.hdr",
+      "rel": "dosch/Dosch.Design.HDRI.Chrome.Studio.Effects.Volume.1/LB/DH-315LB.hdr",
+      "cat": "studio_soft",
+      "width": 512,
+      "height": 512,
+      "mean": 4293.942156553894,
+      "max": 16777.620799999997,
+      "std": 6280.378865143163
+    },
+    {
+      "abs": "public/assets/hdri/dosch/Dosch.Design.HDRI.Chrome.Studio.Effects.Volume.1/LB/DH-316LB.hdr",
+      "rel": "dosch/Dosch.Design.HDRI.Chrome.Studio.Effects.Volume.1/LB/DH-316LB.hdr",
+      "cat": "studio_soft",
+      "width": 512,
+      "height": 512,
+      "mean": 4115.329264016099,
+      "max": 16790.6272,
+      "std": 5998.050010129117
+    },
+    {
+      "abs": "public/assets/hdri/dosch/Dosch.Design.HDRI.Chrome.Studio.Effects.Volume.1/LB/DH-342LB.hdr",
+      "rel": "dosch/Dosch.Design.HDRI.Chrome.Studio.Effects.Volume.1/LB/DH-342LB.hdr",
+      "cat": "studio_soft",
+      "width": 512,
+      "height": 512,
+      "mean": 6256.07061710816,
+      "max": 16853,
+      "std": 7111.785294912201
+    },
+    {
+      "abs": "public/assets/hdri/dosch/Dosch.Design.HDRI.Chrome.Studio.Effects.Volume.1/LB/DH-346LB.hdr",
+      "rel": "dosch/Dosch.Design.HDRI.Chrome.Studio.Effects.Volume.1/LB/DH-346LB.hdr",
+      "cat": "studio_soft",
+      "width": 512,
+      "height": 512,
+      "mean": 6621.646123244313,
+      "max": 16833.620799999997,
+      "std": 6842.887644469778
+    },
+    {
+      "abs": "public/assets/hdri/dosch/Dosch.Design.HDRI.Chrome.Studio.Effects.Volume.1/LB/DH-357LB.hdr",
+      "rel": "dosch/Dosch.Design.HDRI.Chrome.Studio.Effects.Volume.1/LB/DH-357LB.hdr",
+      "cat": "studio_soft",
+      "width": 512,
+      "height": 512,
+      "mean": 2890.5057751163054,
+      "max": 17660,
+      "std": 5700.781405224257
+    },
+    {
+      "abs": "public/assets/hdri/dosch/Dosch.Design.HDRI.Chrome.Studio.Effects.Volume.1/LB/DH-361LB.hdr",
+      "rel": "dosch/Dosch.Design.HDRI.Chrome.Studio.Effects.Volume.1/LB/DH-361LB.hdr",
+      "cat": "studio_soft",
+      "width": 512,
+      "height": 512,
+      "mean": 5958.681812439401,
+      "max": 17660,
+      "std": 7783.809175641346
+    },
+    {
+      "abs": "public/assets/hdri/dosch/Dosch.Design.HDRI.Chrome.Studio.Effects.Volume.1/LB/DH-363LB.hdr",
+      "rel": "dosch/Dosch.Design.HDRI.Chrome.Studio.Effects.Volume.1/LB/DH-363LB.hdr",
+      "cat": "studio_soft",
+      "width": 512,
+      "height": 512,
+      "mean": 856.3758427127204,
+      "max": 17749,
+      "std": 3346.84198772139
+    },
+    {
+      "abs": "public/assets/hdri/dosch/Dosch.Design.HDRI.Chrome.Studio.Effects.Volume.1/LB/DH-365LB.hdr",
+      "rel": "dosch/Dosch.Design.HDRI.Chrome.Studio.Effects.Volume.1/LB/DH-365LB.hdr",
+      "cat": "studio_soft",
+      "width": 512,
+      "height": 512,
+      "mean": 3983.138106964433,
+      "max": 17917,
+      "std": 7178.137511720323
+    },
+    {
+      "abs": "public/assets/hdri/dosch/Dosch.Design.HDRI.Chrome.Studio.Effects.Volume.1/LB/DH-367LB.hdr",
+      "rel": "dosch/Dosch.Design.HDRI.Chrome.Studio.Effects.Volume.1/LB/DH-367LB.hdr",
+      "cat": "studio_soft",
+      "width": 512,
+      "height": 512,
+      "mean": 3725.5435940250713,
+      "max": 17540,
+      "std": 6721.639759947804
+    },
+    {
+      "abs": "public/assets/hdri/dosch/Dosch.Design.HDRI.Chrome.Studio.Effects.Volume.1/LB/DH-370LB.hdr",
+      "rel": "dosch/Dosch.Design.HDRI.Chrome.Studio.Effects.Volume.1/LB/DH-370LB.hdr",
+      "cat": "studio_soft",
+      "width": 512,
+      "height": 512,
+      "mean": 2420.5826794131644,
+      "max": 17909,
+      "std": 5564.3851854681225
+    },
+    {
+      "abs": "public/assets/hdri/dosch/Dosch.Design.HDRI.Chrome.Studio.Effects.Volume.1/LB/DH-372LB.hdr",
+      "rel": "dosch/Dosch.Design.HDRI.Chrome.Studio.Effects.Volume.1/LB/DH-372LB.hdr",
+      "cat": "studio_soft",
+      "width": 512,
+      "height": 512,
+      "mean": 4934.284422981778,
+      "max": 22093.999999999996,
+      "std": 8509.295887031176
+    },
+    {
+      "abs": "public/assets/hdri/dosch/Dosch.Design.HDRI.Chrome.Studio.Effects.Volume.1/LB/DH-411LB.hdr",
+      "rel": "dosch/Dosch.Design.HDRI.Chrome.Studio.Effects.Volume.1/LB/DH-411LB.hdr",
+      "cat": "studio_soft",
+      "width": 512,
+      "height": 512,
+      "mean": 4064.0868438349053,
+      "max": 17717.8668,
+      "std": 6353.0564032927305
+    },
+    {
+      "abs": "public/assets/hdri/dosch/Dosch.Design.HDRI.Chrome.Studio.Effects.Volume.1/LB/DH-439LB.hdr",
+      "rel": "dosch/Dosch.Design.HDRI.Chrome.Studio.Effects.Volume.1/LB/DH-439LB.hdr",
+      "cat": "studio_soft",
+      "width": 512,
+      "height": 512,
+      "mean": 3385.217955824186,
+      "max": 16391.6878,
+      "std": 5082.093505565547
+    },
+    {
+      "abs": "public/assets/hdri/dosch/Dosch.Design.HDRI.Chrome.Studio.Effects.Volume.1/LB/DH-442LB.hdr",
+      "rel": "dosch/Dosch.Design.HDRI.Chrome.Studio.Effects.Volume.1/LB/DH-442LB.hdr",
+      "cat": "studio_soft",
+      "width": 512,
+      "height": 512,
+      "mean": 1228.028112595714,
+      "max": 16604.2436,
+      "std": 2643.5852237920585
+    },
+    {
+      "abs": "public/assets/hdri/dosch/Dosch.Design.HDRI.Chrome.Studio.Effects.Volume.1/LB/DH-446LB.hdr",
+      "rel": "dosch/Dosch.Design.HDRI.Chrome.Studio.Effects.Volume.1/LB/DH-446LB.hdr",
+      "cat": "studio_soft",
+      "width": 512,
+      "height": 512,
+      "mean": 1761.3117811625384,
+      "max": 16229.7456,
+      "std": 3533.129615755817
+    },
+    {
+      "abs": "public/assets/hdri/dosch/Dosch.Design.HDRI.Chrome.Studio.Effects.Volume.1/LB/DH-448LB.hdr",
+      "rel": "dosch/Dosch.Design.HDRI.Chrome.Studio.Effects.Volume.1/LB/DH-448LB.hdr",
+      "cat": "studio_soft",
+      "width": 512,
+      "height": 512,
+      "mean": 1577.7570004208326,
+      "max": 16547.8418,
+      "std": 2838.7043166755493
+    },
+    {
+      "abs": "public/assets/hdri/dosch/Dosch.Design.HDRI.Chrome.Studio.Effects.Volume.1/LL/DH-301LL.hdr",
+      "rel": "dosch/Dosch.Design.HDRI.Chrome.Studio.Effects.Volume.1/LL/DH-301LL.hdr",
+      "cat": "indoor_arch",
+      "width": 2048,
+      "height": 1024,
+      "mean": 9692.328725337982,
+      "max": 16484,
+      "std": 6185.393110759908
+    },
+    {
+      "abs": "public/assets/hdri/dosch/Dosch.Design.HDRI.Chrome.Studio.Effects.Volume.1/LL/DH-302LL.hdr",
+      "rel": "dosch/Dosch.Design.HDRI.Chrome.Studio.Effects.Volume.1/LL/DH-302LL.hdr",
+      "cat": "indoor_arch",
+      "width": 2048,
+      "height": 1024,
+      "mean": 10242.918746948242,
+      "max": 16484,
+      "std": 6124.424614138026
+    },
+    {
+      "abs": "public/assets/hdri/dosch/Dosch.Design.HDRI.Chrome.Studio.Effects.Volume.1/LL/DH-304LL.hdr",
+      "rel": "dosch/Dosch.Design.HDRI.Chrome.Studio.Effects.Volume.1/LL/DH-304LL.hdr",
+      "cat": "indoor_arch",
+      "width": 2048,
+      "height": 1024,
+      "mean": 11381.107474803925,
+      "max": 16893,
+      "std": 5104.374325148161
+    },
+    {
+      "abs": "public/assets/hdri/dosch/Dosch.Design.HDRI.Chrome.Studio.Effects.Volume.1/LL/DH-305LL.hdr",
+      "rel": "dosch/Dosch.Design.HDRI.Chrome.Studio.Effects.Volume.1/LL/DH-305LL.hdr",
+      "cat": "indoor_arch",
+      "width": 2048,
+      "height": 1024,
+      "mean": 9182.413982391357,
+      "max": 16893,
+      "std": 5919.382829763189
+    },
+    {
+      "abs": "public/assets/hdri/dosch/Dosch.Design.HDRI.Chrome.Studio.Effects.Volume.1/LL/DH-306LL.hdr",
+      "rel": "dosch/Dosch.Design.HDRI.Chrome.Studio.Effects.Volume.1/LL/DH-306LL.hdr",
+      "cat": "indoor_arch",
+      "width": 2048,
+      "height": 1024,
+      "mean": 9980.093417167664,
+      "max": 16893,
+      "std": 6238.784664548235
+    },
+    {
+      "abs": "public/assets/hdri/dosch/Dosch.Design.HDRI.Chrome.Studio.Effects.Volume.1/LL/DH-309LL.hdr",
+      "rel": "dosch/Dosch.Design.HDRI.Chrome.Studio.Effects.Volume.1/LL/DH-309LL.hdr",
+      "cat": "indoor_arch",
+      "width": 2048,
+      "height": 1024,
+      "mean": 7443.85676908493,
+      "max": 16950,
+      "std": 7249.681041878387
+    },
+    {
+      "abs": "public/assets/hdri/dosch/Dosch.Design.HDRI.Chrome.Studio.Effects.Volume.1/LL/DH-314LL.hdr",
+      "rel": "dosch/Dosch.Design.HDRI.Chrome.Studio.Effects.Volume.1/LL/DH-314LL.hdr",
+      "cat": "indoor_arch",
+      "width": 2048,
+      "height": 1024,
+      "mean": 6780.364040065758,
+      "max": 16740.486399999998,
+      "std": 6682.646906883057
+    },
+    {
+      "abs": "public/assets/hdri/dosch/Dosch.Design.HDRI.Chrome.Studio.Effects.Volume.1/LL/DH-315LL.hdr",
+      "rel": "dosch/Dosch.Design.HDRI.Chrome.Studio.Effects.Volume.1/LL/DH-315LL.hdr",
+      "cat": "indoor_arch",
+      "width": 2048,
+      "height": 1024,
+      "mean": 6398.989294641751,
+      "max": 16837.471999999998,
+      "std": 7006.899800986148
+    },
+    {
+      "abs": "public/assets/hdri/dosch/Dosch.Design.HDRI.Chrome.Studio.Effects.Volume.1/LL/DH-316LL.hdr",
+      "rel": "dosch/Dosch.Design.HDRI.Chrome.Studio.Effects.Volume.1/LL/DH-316LL.hdr",
+      "cat": "indoor_arch",
+      "width": 2048,
+      "height": 1024,
+      "mean": 6585.597264915975,
+      "max": 16826.7856,
+      "std": 5946.088641356519
+    },
+    {
+      "abs": "public/assets/hdri/dosch/Dosch.Design.HDRI.Chrome.Studio.Effects.Volume.1/LL/DH-317LL.hdr",
+      "rel": "dosch/Dosch.Design.HDRI.Chrome.Studio.Effects.Volume.1/LL/DH-317LL.hdr",
+      "cat": "indoor_arch",
+      "width": 2048,
+      "height": 1024,
+      "mean": 9211.817325428676,
+      "max": 16732.3488,
+      "std": 7114.417746640535
+    },
+    {
+      "abs": "public/assets/hdri/dosch/Dosch.Design.HDRI.Chrome.Studio.Effects.Volume.1/LL/DH-318LL.hdr",
+      "rel": "dosch/Dosch.Design.HDRI.Chrome.Studio.Effects.Volume.1/LL/DH-318LL.hdr",
+      "cat": "indoor_arch",
+      "width": 2048,
+      "height": 1024,
+      "mean": 8002.308272301037,
+      "max": 16846.0496,
+      "std": 6039.991505138027
+    },
+    {
+      "abs": "public/assets/hdri/dosch/Dosch.Design.HDRI.Chrome.Studio.Effects.Volume.1/LL/DH-320LL.hdr",
+      "rel": "dosch/Dosch.Design.HDRI.Chrome.Studio.Effects.Volume.1/LL/DH-320LL.hdr",
+      "cat": "indoor_arch",
+      "width": 2048,
+      "height": 1024,
+      "mean": 7555.493213598296,
+      "max": 16664.339,
+      "std": 7817.555448651034
+    },
+    {
+      "abs": "public/assets/hdri/dosch/Dosch.Design.HDRI.Chrome.Studio.Effects.Volume.1/LL/DH-325LL.hdr",
+      "rel": "dosch/Dosch.Design.HDRI.Chrome.Studio.Effects.Volume.1/LL/DH-325LL.hdr",
+      "cat": "indoor_arch",
+      "width": 2048,
+      "height": 1024,
+      "mean": 12822.03159509958,
+      "max": 16636.1266,
+      "std": 3648.240349065523
+    },
+    {
+      "abs": "public/assets/hdri/dosch/Dosch.Design.HDRI.Chrome.Studio.Effects.Volume.1/LL/DH-332LL.hdr",
+      "rel": "dosch/Dosch.Design.HDRI.Chrome.Studio.Effects.Volume.1/LL/DH-332LL.hdr",
+      "cat": "indoor_arch",
+      "width": 2048,
+      "height": 1024,
+      "mean": 11451.982953071594,
+      "max": 15499.999999999998,
+      "std": 5346.790360097556
+    },
+    {
+      "abs": "public/assets/hdri/dosch/Dosch.Design.HDRI.Chrome.Studio.Effects.Volume.1/LL/DH-335LL.hdr",
+      "rel": "dosch/Dosch.Design.HDRI.Chrome.Studio.Effects.Volume.1/LL/DH-335LL.hdr",
+      "cat": "indoor_arch",
+      "width": 2048,
+      "height": 1024,
+      "mean": 11832.379720211029,
+      "max": 16853,
+      "std": 6427.9324608741435
+    },
+    {
+      "abs": "public/assets/hdri/dosch/Dosch.Design.HDRI.Chrome.Studio.Effects.Volume.1/LL/DH-337LL.hdr",
+      "rel": "dosch/Dosch.Design.HDRI.Chrome.Studio.Effects.Volume.1/LL/DH-337LL.hdr",
+      "cat": "indoor_arch",
+      "width": 2048,
+      "height": 1024,
+      "mean": 12897.289270401001,
+      "max": 15468,
+      "std": 4325.475485966152
+    },
+    {
+      "abs": "public/assets/hdri/dosch/Dosch.Design.HDRI.Chrome.Studio.Effects.Volume.1/LL/DH-338LL.hdr",
+      "rel": "dosch/Dosch.Design.HDRI.Chrome.Studio.Effects.Volume.1/LL/DH-338LL.hdr",
+      "cat": "indoor_arch",
+      "width": 2048,
+      "height": 1024,
+      "mean": 11369.370724053197,
+      "max": 16877,
+      "std": 6225.464056887372
+    },
+    {
+      "abs": "public/assets/hdri/dosch/Dosch.Design.HDRI.Chrome.Studio.Effects.Volume.1/LL/DH-340LL.hdr",
+      "rel": "dosch/Dosch.Design.HDRI.Chrome.Studio.Effects.Volume.1/LL/DH-340LL.hdr",
+      "cat": "indoor_arch",
+      "width": 2048,
+      "height": 1024,
+      "mean": 10305.020580767094,
+      "max": 15524,
+      "std": 5803.373319315693
+    },
+    {
+      "abs": "public/assets/hdri/dosch/Dosch.Design.HDRI.Chrome.Studio.Effects.Volume.1/LL/DH-341LL.hdr",
+      "rel": "dosch/Dosch.Design.HDRI.Chrome.Studio.Effects.Volume.1/LL/DH-341LL.hdr",
+      "cat": "indoor_arch",
+      "width": 2048,
+      "height": 1024,
+      "mean": 8483.682994527197,
+      "max": 15524,
+      "std": 6781.248322890959
+    },
+    {
+      "abs": "public/assets/hdri/dosch/Dosch.Design.HDRI.Chrome.Studio.Effects.Volume.1/LL/DH-342LL.hdr",
+      "rel": "dosch/Dosch.Design.HDRI.Chrome.Studio.Effects.Volume.1/LL/DH-342LL.hdr",
+      "cat": "indoor_arch",
+      "width": 2048,
+      "height": 1024,
+      "mean": 2917.633499873,
+      "max": 16853,
+      "std": 5819.900680327737
+    },
+    {
+      "abs": "public/assets/hdri/dosch/Dosch.Design.HDRI.Chrome.Studio.Effects.Volume.1/LL/DH-343LL.hdr",
+      "rel": "dosch/Dosch.Design.HDRI.Chrome.Studio.Effects.Volume.1/LL/DH-343LL.hdr",
+      "cat": "indoor_arch",
+      "width": 2048,
+      "height": 1024,
+      "mean": 4614.967465915357,
+      "max": 16885,
+      "std": 6672.90472992841
+    },
+    {
+      "abs": "public/assets/hdri/dosch/Dosch.Design.HDRI.Chrome.Studio.Effects.Volume.1/LL/DH-346LL.hdr",
+      "rel": "dosch/Dosch.Design.HDRI.Chrome.Studio.Effects.Volume.1/LL/DH-346LL.hdr",
+      "cat": "indoor_arch",
+      "width": 2048,
+      "height": 1024,
+      "mean": 3221.77245676909,
+      "max": 16840.327999999998,
+      "std": 5986.961215218122
+    },
+    {
+      "abs": "public/assets/hdri/dosch/Dosch.Design.HDRI.Chrome.Studio.Effects.Volume.1/LL/DH-347LL.hdr",
+      "rel": "dosch/Dosch.Design.HDRI.Chrome.Studio.Effects.Volume.1/LL/DH-347LL.hdr",
+      "cat": "indoor_arch",
+      "width": 2048,
+      "height": 1024,
+      "mean": 12755.229518191729,
+      "max": 15524,
+      "std": 4051.122266741632
+    },
+    {
+      "abs": "public/assets/hdri/dosch/Dosch.Design.HDRI.Chrome.Studio.Effects.Volume.1/LL/DH-348LL.hdr",
+      "rel": "dosch/Dosch.Design.HDRI.Chrome.Studio.Effects.Volume.1/LL/DH-348LL.hdr",
+      "cat": "indoor_arch",
+      "width": 2048,
+      "height": 1024,
+      "mean": 10008.475461959839,
+      "max": 17359,
+      "std": 6102.8294814619885
+    },
+    {
+      "abs": "public/assets/hdri/dosch/Dosch.Design.HDRI.Chrome.Studio.Effects.Volume.1/LL/DH-349LL.hdr",
+      "rel": "dosch/Dosch.Design.HDRI.Chrome.Studio.Effects.Volume.1/LL/DH-349LL.hdr",
+      "cat": "indoor_arch",
+      "width": 2048,
+      "height": 1024,
+      "mean": 4386.630260467529,
+      "max": 17150,
+      "std": 6497.768869122677
+    },
+    {
+      "abs": "public/assets/hdri/dosch/Dosch.Design.HDRI.Chrome.Studio.Effects.Volume.1/LL/DH-351LL.hdr",
+      "rel": "dosch/Dosch.Design.HDRI.Chrome.Studio.Effects.Volume.1/LL/DH-351LL.hdr",
+      "cat": "indoor_arch",
+      "width": 2048,
+      "height": 1024,
+      "mean": 7503.312086582184,
+      "max": 17303,
+      "std": 6957.1203670258565
+    },
+    {
+      "abs": "public/assets/hdri/dosch/Dosch.Design.HDRI.Chrome.Studio.Effects.Volume.1/LL/DH-353LL.hdr",
+      "rel": "dosch/Dosch.Design.HDRI.Chrome.Studio.Effects.Volume.1/LL/DH-353LL.hdr",
+      "cat": "indoor_arch",
+      "width": 2048,
+      "height": 1024,
+      "mean": 7042.812055110931,
+      "max": 17279,
+      "std": 6753.184184158829
+    },
+    {
+      "abs": "public/assets/hdri/dosch/Dosch.Design.HDRI.Chrome.Studio.Effects.Volume.1/LL/DH-354LL.hdr",
+      "rel": "dosch/Dosch.Design.HDRI.Chrome.Studio.Effects.Volume.1/LL/DH-354LL.hdr",
+      "cat": "indoor_arch",
+      "width": 2048,
+      "height": 1024,
+      "mean": 1527.0403108596802,
+      "max": 17660,
+      "std": 4835.1685471633355
+    },
+    {
+      "abs": "public/assets/hdri/dosch/Dosch.Design.HDRI.Chrome.Studio.Effects.Volume.1/LL/DH-356LL.hdr",
+      "rel": "dosch/Dosch.Design.HDRI.Chrome.Studio.Effects.Volume.1/LL/DH-356LL.hdr",
+      "cat": "indoor_arch",
+      "width": 2048,
+      "height": 1024,
+      "mean": 4733.416738510132,
+      "max": 17660,
+      "std": 7818.383921596582
+    },
+    {
+      "abs": "public/assets/hdri/dosch/Dosch.Design.HDRI.Chrome.Studio.Effects.Volume.1/LL/DH-357LL.hdr",
+      "rel": "dosch/Dosch.Design.HDRI.Chrome.Studio.Effects.Volume.1/LL/DH-357LL.hdr",
+      "cat": "indoor_arch",
+      "width": 2048,
+      "height": 1024,
+      "mean": 2253.307957649231,
+      "max": 17660,
+      "std": 5608.905229121521
+    },
+    {
+      "abs": "public/assets/hdri/dosch/Dosch.Design.HDRI.Chrome.Studio.Effects.Volume.1/LL/DH-358LL.hdr",
+      "rel": "dosch/Dosch.Design.HDRI.Chrome.Studio.Effects.Volume.1/LL/DH-358LL.hdr",
+      "cat": "indoor_arch",
+      "width": 2048,
+      "height": 1024,
+      "mean": 11930.39806318283,
+      "max": 17660,
+      "std": 6955.34723678494
+    },
+    {
+      "abs": "public/assets/hdri/dosch/Dosch.Design.HDRI.Chrome.Studio.Effects.Volume.1/LL/DH-359LL.hdr",
+      "rel": "dosch/Dosch.Design.HDRI.Chrome.Studio.Effects.Volume.1/LL/DH-359LL.hdr",
+      "cat": "indoor_arch",
+      "width": 2048,
+      "height": 1024,
+      "mean": 3207.667064666748,
+      "max": 17660,
+      "std": 6635.315177108951
+    },
+    {
+      "abs": "public/assets/hdri/dosch/Dosch.Design.HDRI.Chrome.Studio.Effects.Volume.1/LL/DH-360LL.hdr",
+      "rel": "dosch/Dosch.Design.HDRI.Chrome.Studio.Effects.Volume.1/LL/DH-360LL.hdr",
+      "cat": "indoor_arch",
+      "width": 2048,
+      "height": 1024,
+      "mean": 3686.648355484009,
+      "max": 17548,
+      "std": 6718.603094827772
+    },
+    {
+      "abs": "public/assets/hdri/dosch/Dosch.Design.HDRI.Chrome.Studio.Effects.Volume.1/LL/DH-361LL.hdr",
+      "rel": "dosch/Dosch.Design.HDRI.Chrome.Studio.Effects.Volume.1/LL/DH-361LL.hdr",
+      "cat": "indoor_arch",
+      "width": 2048,
+      "height": 1024,
+      "mean": 7609.086177825928,
+      "max": 17660,
+      "std": 8173.8131641946875
+    },
+    {
+      "abs": "public/assets/hdri/dosch/Dosch.Design.HDRI.Chrome.Studio.Effects.Volume.1/LL/DH-363LL.hdr",
+      "rel": "dosch/Dosch.Design.HDRI.Chrome.Studio.Effects.Volume.1/LL/DH-363LL.hdr",
+      "cat": "indoor_arch",
+      "width": 2048,
+      "height": 1024,
+      "mean": 579.1386241912842,
+      "max": 17749,
+      "std": 3152.185706365196
+    },
+    {
+      "abs": "public/assets/hdri/dosch/Dosch.Design.HDRI.Chrome.Studio.Effects.Volume.1/LL/DH-364LL.hdr",
+      "rel": "dosch/Dosch.Design.HDRI.Chrome.Studio.Effects.Volume.1/LL/DH-364LL.hdr",
+      "cat": "indoor_arch",
+      "width": 2048,
+      "height": 1024,
+      "mean": 3688.0300674438477,
+      "max": 17884.999999999996,
+      "std": 7146.97297677346
+    },
+    {
+      "abs": "public/assets/hdri/dosch/Dosch.Design.HDRI.Chrome.Studio.Effects.Volume.1/LL/DH-365LL.hdr",
+      "rel": "dosch/Dosch.Design.HDRI.Chrome.Studio.Effects.Volume.1/LL/DH-365LL.hdr",
+      "cat": "indoor_arch",
+      "width": 2048,
+      "height": 1024,
+      "mean": 6797.465610980988,
+      "max": 17917,
+      "std": 8691.579078829946
+    },
+    {
+      "abs": "public/assets/hdri/dosch/Dosch.Design.HDRI.Chrome.Studio.Effects.Volume.1/LL/DH-366LL.hdr",
+      "rel": "dosch/Dosch.Design.HDRI.Chrome.Studio.Effects.Volume.1/LL/DH-366LL.hdr",
+      "cat": "indoor_arch",
+      "width": 2048,
+      "height": 1024,
+      "mean": 3668.508994579315,
+      "max": 16468,
+      "std": 6592.228672214004
+    },
+    {
+      "abs": "public/assets/hdri/dosch/Dosch.Design.HDRI.Chrome.Studio.Effects.Volume.1/LL/DH-368LL.hdr",
+      "rel": "dosch/Dosch.Design.HDRI.Chrome.Studio.Effects.Volume.1/LL/DH-368LL.hdr",
+      "cat": "indoor_arch",
+      "width": 2048,
+      "height": 1024,
+      "mean": 2554.6558532714844,
+      "max": 17412,
+      "std": 6068.875764636524
+    },
+    {
+      "abs": "public/assets/hdri/dosch/Dosch.Design.HDRI.Chrome.Studio.Effects.Volume.1/LL/DH-369LL.hdr",
+      "rel": "dosch/Dosch.Design.HDRI.Chrome.Studio.Effects.Volume.1/LL/DH-369LL.hdr",
+      "cat": "indoor_arch",
+      "width": 2048,
+      "height": 1024,
+      "mean": 5605.146296977997,
+      "max": 17917,
+      "std": 7718.788379419211
+    },
+    {
+      "abs": "public/assets/hdri/dosch/Dosch.Design.HDRI.Chrome.Studio.Effects.Volume.1/LL/DH-370LL.hdr",
+      "rel": "dosch/Dosch.Design.HDRI.Chrome.Studio.Effects.Volume.1/LL/DH-370LL.hdr",
+      "cat": "indoor_arch",
+      "width": 2048,
+      "height": 1024,
+      "mean": 4913.014451980591,
+      "max": 17917,
+      "std": 7594.431843617115
+    },
+    {
+      "abs": "public/assets/hdri/dosch/Dosch.Design.HDRI.Chrome.Studio.Effects.Volume.1/LL/DH-371LL.hdr",
+      "rel": "dosch/Dosch.Design.HDRI.Chrome.Studio.Effects.Volume.1/LL/DH-371LL.hdr",
+      "cat": "indoor_arch",
+      "width": 2048,
+      "height": 1024,
+      "mean": 5253.689008712769,
+      "max": 17917,
+      "std": 7914.402443017722
+    },
+    {
+      "abs": "public/assets/hdri/dosch/Dosch.Design.HDRI.Chrome.Studio.Effects.Volume.1/LL/DH-372LL.hdr",
+      "rel": "dosch/Dosch.Design.HDRI.Chrome.Studio.Effects.Volume.1/LL/DH-372LL.hdr",
+      "cat": "indoor_arch",
+      "width": 2048,
+      "height": 1024,
+      "mean": 1790.705759525299,
+      "max": 22503,
+      "std": 5791.543544236525
+    },
+    {
+      "abs": "public/assets/hdri/dosch/Dosch.Design.HDRI.Chrome.Studio.Effects.Volume.1/LL/DH-375LL.hdr",
+      "rel": "dosch/Dosch.Design.HDRI.Chrome.Studio.Effects.Volume.1/LL/DH-375LL.hdr",
+      "cat": "indoor_arch",
+      "width": 2048,
+      "height": 1024,
+      "mean": 11995.303270509365,
+      "max": 16536.6468,
+      "std": 4961.222194594224
+    },
+    {
+      "abs": "public/assets/hdri/dosch/Dosch.Design.HDRI.Chrome.Studio.Effects.Volume.1/LL/DH-411LL.hdr",
+      "rel": "dosch/Dosch.Design.HDRI.Chrome.Studio.Effects.Volume.1/LL/DH-411LL.hdr",
+      "cat": "indoor_arch",
+      "width": 2048,
+      "height": 1024,
+      "mean": 4296.939247990261,
+      "max": 17719.834000000003,
+      "std": 6663.469302550625
+    },
+    {
+      "abs": "public/assets/hdri/dosch/Dosch.Design.HDRI.Chrome.Studio.Effects.Volume.1/LL/DH-413LL.hdr",
+      "rel": "dosch/Dosch.Design.HDRI.Chrome.Studio.Effects.Volume.1/LL/DH-413LL.hdr",
+      "cat": "indoor_arch",
+      "width": 2048,
+      "height": 1024,
+      "mean": 6031.063969887162,
+      "max": 16123.3484,
+      "std": 5125.637801593466
+    },
+    {
+      "abs": "public/assets/hdri/dosch/Dosch.Design.HDRI.Chrome.Studio.Effects.Volume.1/LL/DH-415LL.hdr",
+      "rel": "dosch/Dosch.Design.HDRI.Chrome.Studio.Effects.Volume.1/LL/DH-415LL.hdr",
+      "cat": "indoor_arch",
+      "width": 2048,
+      "height": 1024,
+      "mean": 11139.503761204836,
+      "max": 15645.6656,
+      "std": 4629.136822181523
+    },
+    {
+      "abs": "public/assets/hdri/dosch/Dosch.Design.HDRI.Chrome.Studio.Effects.Volume.1/LL/DH-416LL.hdr",
+      "rel": "dosch/Dosch.Design.HDRI.Chrome.Studio.Effects.Volume.1/LL/DH-416LL.hdr",
+      "cat": "indoor_arch",
+      "width": 2048,
+      "height": 1024,
+      "mean": 3448.0502610613667,
+      "max": 15050.1004,
+      "std": 3084.7815044582944
+    },
+    {
+      "abs": "public/assets/hdri/dosch/Dosch.Design.HDRI.Chrome.Studio.Effects.Volume.1/LL/DH-417LL.hdr",
+      "rel": "dosch/Dosch.Design.HDRI.Chrome.Studio.Effects.Volume.1/LL/DH-417LL.hdr",
+      "cat": "indoor_arch",
+      "width": 2048,
+      "height": 1024,
+      "mean": 11854.830634511596,
+      "max": 15590.780599999998,
+      "std": 4402.242177338058
+    },
+    {
+      "abs": "public/assets/hdri/dosch/Dosch.Design.HDRI.Chrome.Studio.Effects.Volume.1/LL/DH-418LL.hdr",
+      "rel": "dosch/Dosch.Design.HDRI.Chrome.Studio.Effects.Volume.1/LL/DH-418LL.hdr",
+      "cat": "indoor_arch",
+      "width": 2048,
+      "height": 1024,
+      "mean": 11702.26466648931,
+      "max": 15651.721999999998,
+      "std": 3485.5977799511543
+    },
+    {
+      "abs": "public/assets/hdri/dosch/Dosch.Design.HDRI.Chrome.Studio.Effects.Volume.1/LL/DH-420LL.hdr",
+      "rel": "dosch/Dosch.Design.HDRI.Chrome.Studio.Effects.Volume.1/LL/DH-420LL.hdr",
+      "cat": "indoor_arch",
+      "width": 2048,
+      "height": 1024,
+      "mean": 10249.17846827715,
+      "max": 15677.5326,
+      "std": 5046.700692299615
+    },
+    {
+      "abs": "public/assets/hdri/dosch/Dosch.Design.HDRI.Chrome.Studio.Effects.Volume.1/LL/DH-421LL.hdr",
+      "rel": "dosch/Dosch.Design.HDRI.Chrome.Studio.Effects.Volume.1/LL/DH-421LL.hdr",
+      "cat": "indoor_arch",
+      "width": 2048,
+      "height": 1024,
+      "mean": 10678.26541416571,
+      "max": 15644.670399999999,
+      "std": 4360.141543226257
+    },
+    {
+      "abs": "public/assets/hdri/dosch/Dosch.Design.HDRI.Chrome.Studio.Effects.Volume.1/LL/DH-430LL.hdr",
+      "rel": "dosch/Dosch.Design.HDRI.Chrome.Studio.Effects.Volume.1/LL/DH-430LL.hdr",
+      "cat": "indoor_arch",
+      "width": 2048,
+      "height": 1024,
+      "mean": 9826.952265399235,
+      "max": 16299.0814,
+      "std": 7144.093537272488
+    },
+    {
+      "abs": "public/assets/hdri/dosch/Dosch.Design.HDRI.Chrome.Studio.Effects.Volume.1/LL/DH-431LL.hdr",
+      "rel": "dosch/Dosch.Design.HDRI.Chrome.Studio.Effects.Volume.1/LL/DH-431LL.hdr",
+      "cat": "indoor_arch",
+      "width": 2048,
+      "height": 1024,
+      "mean": 6467.2328361952,
+      "max": 14813.254799999999,
+      "std": 6725.802544866931
+    },
+    {
+      "abs": "public/assets/hdri/dosch/Dosch.Design.HDRI.Chrome.Studio.Effects.Volume.1/LL/DH-439LL.hdr",
+      "rel": "dosch/Dosch.Design.HDRI.Chrome.Studio.Effects.Volume.1/LL/DH-439LL.hdr",
+      "cat": "indoor_arch",
+      "width": 2048,
+      "height": 1024,
+      "mean": 958.3898528570405,
+      "max": 16604.2436,
+      "std": 2945.053132723677
+    },
+    {
+      "abs": "public/assets/hdri/dosch/Dosch.Design.HDRI.Chrome.Studio.Effects.Volume.1/LL/DH-442LL.hdr",
+      "rel": "dosch/Dosch.Design.HDRI.Chrome.Studio.Effects.Volume.1/LL/DH-442LL.hdr",
+      "cat": "indoor_arch",
+      "width": 2048,
+      "height": 1024,
+      "mean": 1529.1405969141595,
+      "max": 16612.2756,
+      "std": 3420.7940916284697
+    },
+    {
+      "abs": "public/assets/hdri/dosch/Dosch.Design.HDRI.Chrome.Studio.Effects.Volume.1/LL/DH-443LL.hdr",
+      "rel": "dosch/Dosch.Design.HDRI.Chrome.Studio.Effects.Volume.1/LL/DH-443LL.hdr",
+      "cat": "indoor_arch",
+      "width": 2048,
+      "height": 1024,
+      "mean": 3659.0310647659035,
+      "max": 16577.7316,
+      "std": 6282.782977668032
+    },
+    {
+      "abs": "public/assets/hdri/dosch/Dosch.Design.HDRI.Chrome.Studio.Effects.Volume.1/LL/DH-446LL.hdr",
+      "rel": "dosch/Dosch.Design.HDRI.Chrome.Studio.Effects.Volume.1/LL/DH-446LL.hdr",
+      "cat": "indoor_arch",
+      "width": 2048,
+      "height": 1024,
+      "mean": 2052.28465118895,
+      "max": 16336.171599999998,
+      "std": 3853.907278359072
+    },
+    {
+      "abs": "public/assets/hdri/dosch/Dosch.Design.HDRI.Chrome.Studio.Effects.Volume.1/LL/DH-447LL.hdr",
+      "rel": "dosch/Dosch.Design.HDRI.Chrome.Studio.Effects.Volume.1/LL/DH-447LL.hdr",
+      "cat": "indoor_arch",
+      "width": 2048,
+      "height": 1024,
+      "mean": 6442.615662936222,
+      "max": 16585.7636,
+      "std": 6691.762333386355
+    },
+    {
+      "abs": "public/assets/hdri/dosch/Dosch.Design.HDRI.Chrome.Studio.Effects.Volume.1/LP/DH-301LP.hdr",
+      "rel": "dosch/Dosch.Design.HDRI.Chrome.Studio.Effects.Volume.1/LP/DH-301LP.hdr",
+      "cat": "studio_soft",
+      "width": 2048,
+      "height": 2048,
+      "mean": 9610.789156231222,
+      "max": 16476,
+      "std": 5890.439075461354
+    },
+    {
+      "abs": "public/assets/hdri/dosch/Dosch.Design.HDRI.Chrome.Studio.Effects.Volume.1/LP/DH-302LP.hdr",
+      "rel": "dosch/Dosch.Design.HDRI.Chrome.Studio.Effects.Volume.1/LP/DH-302LP.hdr",
+      "cat": "studio_soft",
+      "width": 2048,
+      "height": 2048,
+      "mean": 10158.607847851135,
+      "max": 16476,
+      "std": 6256.870452737644
+    },
+    {
+      "abs": "public/assets/hdri/dosch/Dosch.Design.HDRI.Chrome.Studio.Effects.Volume.1/LP/DH-304LP.hdr",
+      "rel": "dosch/Dosch.Design.HDRI.Chrome.Studio.Effects.Volume.1/LP/DH-304LP.hdr",
+      "cat": "studio_soft",
+      "width": 2048,
+      "height": 2048,
+      "mean": 10158.063238898298,
+      "max": 16893,
+      "std": 5572.6811758088625
+    },
+    {
+      "abs": "public/assets/hdri/dosch/Dosch.Design.HDRI.Chrome.Studio.Effects.Volume.1/LP/DH-305LP.hdr",
+      "rel": "dosch/Dosch.Design.HDRI.Chrome.Studio.Effects.Volume.1/LP/DH-305LP.hdr",
+      "cat": "studio_soft",
+      "width": 2048,
+      "height": 2048,
+      "mean": 8460.558229514652,
+      "max": 16893,
+      "std": 5723.923326412736
+    },
+    {
+      "abs": "public/assets/hdri/dosch/Dosch.Design.HDRI.Chrome.Studio.Effects.Volume.1/LP/DH-306LP.hdr",
+      "rel": "dosch/Dosch.Design.HDRI.Chrome.Studio.Effects.Volume.1/LP/DH-306LP.hdr",
+      "cat": "studio_soft",
+      "width": 2048,
+      "height": 2048,
+      "mean": 11021.379780512443,
+      "max": 16893,
+      "std": 5731.568868505792
+    },
+    {
+      "abs": "public/assets/hdri/dosch/Dosch.Design.HDRI.Chrome.Studio.Effects.Volume.1/LP/DH-310LP.hdr",
+      "rel": "dosch/Dosch.Design.HDRI.Chrome.Studio.Effects.Volume.1/LP/DH-310LP.hdr",
+      "cat": "studio_soft",
+      "width": 2048,
+      "height": 2048,
+      "mean": 5694.525847328588,
+      "max": 16319,
+      "std": 6063.838736228574
+    },
+    {
+      "abs": "public/assets/hdri/dosch/Dosch.Design.HDRI.Chrome.Studio.Effects.Volume.1/LP/DH-314LP.hdr",
+      "rel": "dosch/Dosch.Design.HDRI.Chrome.Studio.Effects.Volume.1/LP/DH-314LP.hdr",
+      "cat": "studio_soft",
+      "width": 2048,
+      "height": 2048,
+      "mean": 4978.142833343588,
+      "max": 16740.486399999998,
+      "std": 6391.668650347457
+    },
+    {
+      "abs": "public/assets/hdri/dosch/Dosch.Design.HDRI.Chrome.Studio.Effects.Volume.1/LP/DH-317LP.hdr",
+      "rel": "dosch/Dosch.Design.HDRI.Chrome.Studio.Effects.Volume.1/LP/DH-317LP.hdr",
+      "cat": "studio_soft",
+      "width": 2048,
+      "height": 2048,
+      "mean": 5798.789554501491,
+      "max": 16732.3488,
+      "std": 6965.669275104661
+    },
+    {
+      "abs": "public/assets/hdri/dosch/Dosch.Design.HDRI.Chrome.Studio.Effects.Volume.1/LP/DH-318LP.hdr",
+      "rel": "dosch/Dosch.Design.HDRI.Chrome.Studio.Effects.Volume.1/LP/DH-318LP.hdr",
+      "cat": "studio_soft",
+      "width": 2048,
+      "height": 2048,
+      "mean": 7809.840325218881,
+      "max": 16846.0496,
+      "std": 6054.532354474526
+    },
+    {
+      "abs": "public/assets/hdri/dosch/Dosch.Design.HDRI.Chrome.Studio.Effects.Volume.1/LP/DH-335LP.hdr",
+      "rel": "dosch/Dosch.Design.HDRI.Chrome.Studio.Effects.Volume.1/LP/DH-335LP.hdr",
+      "cat": "studio_soft",
+      "width": 2048,
+      "height": 2048,
+      "mean": 5177.47790906652,
+      "max": 16853,
+      "std": 7001.010243538376
+    },
+    {
+      "abs": "public/assets/hdri/dosch/Dosch.Design.HDRI.Chrome.Studio.Effects.Volume.1/LP/DH-337LP.hdr",
+      "rel": "dosch/Dosch.Design.HDRI.Chrome.Studio.Effects.Volume.1/LP/DH-337LP.hdr",
+      "cat": "studio_soft",
+      "width": 2048,
+      "height": 2048,
+      "mean": 10770.783481346229,
+      "max": 15468,
+      "std": 5228.337897623846
+    },
+    {
+      "abs": "public/assets/hdri/dosch/Dosch.Design.HDRI.Chrome.Studio.Effects.Volume.1/LP/DH-338LP.hdr",
+      "rel": "dosch/Dosch.Design.HDRI.Chrome.Studio.Effects.Volume.1/LP/DH-338LP.hdr",
+      "cat": "studio_soft",
+      "width": 2048,
+      "height": 2048,
+      "mean": 9475.723964760986,
+      "max": 16877,
+      "std": 6305.276674680564
+    },
+    {
+      "abs": "public/assets/hdri/dosch/Dosch.Design.HDRI.Chrome.Studio.Effects.Volume.1/LP/DH-339LP.hdr",
+      "rel": "dosch/Dosch.Design.HDRI.Chrome.Studio.Effects.Volume.1/LP/DH-339LP.hdr",
+      "cat": "studio_soft",
+      "width": 2048,
+      "height": 2048,
+      "mean": 10512.651488216397,
+      "max": 16766.155199999997,
+      "std": 6559.922050571219
+    },
+    {
+      "abs": "public/assets/hdri/dosch/Dosch.Design.HDRI.Chrome.Studio.Effects.Volume.1/LP/DH-343LP.hdr",
+      "rel": "dosch/Dosch.Design.HDRI.Chrome.Studio.Effects.Volume.1/LP/DH-343LP.hdr",
+      "cat": "studio_soft",
+      "width": 2048,
+      "height": 2048,
+      "mean": 7582.9627987067815,
+      "max": 16885,
+      "std": 6933.690395483492
+    },
+    {
+      "abs": "public/assets/hdri/dosch/Dosch.Design.HDRI.Chrome.Studio.Effects.Volume.1/LP/DH-344LP.hdr",
+      "rel": "dosch/Dosch.Design.HDRI.Chrome.Studio.Effects.Volume.1/LP/DH-344LP.hdr",
+      "cat": "studio_soft",
+      "width": 2048,
+      "height": 2048,
+      "mean": 5177.914089580024,
+      "max": 16572,
+      "std": 6861.90831566362
+    },
+    {
+      "abs": "public/assets/hdri/dosch/Dosch.Design.HDRI.Chrome.Studio.Effects.Volume.1/LP/DH-347LP.hdr",
+      "rel": "dosch/Dosch.Design.HDRI.Chrome.Studio.Effects.Volume.1/LP/DH-347LP.hdr",
+      "cat": "studio_soft",
+      "width": 2048,
+      "height": 2048,
+      "mean": 8891.79729491702,
+      "max": 15524,
+      "std": 6020.509573777641
+    },
+    {
+      "abs": "public/assets/hdri/dosch/Dosch.Design.HDRI.Chrome.Studio.Effects.Volume.1/LP/DH-348LP.hdr",
+      "rel": "dosch/Dosch.Design.HDRI.Chrome.Studio.Effects.Volume.1/LP/DH-348LP.hdr",
+      "cat": "studio_soft",
+      "width": 2048,
+      "height": 2048,
+      "mean": 9888.458476293,
+      "max": 17359,
+      "std": 5916.265490502559
+    },
+    {
+      "abs": "public/assets/hdri/dosch/Dosch.Design.HDRI.Chrome.Studio.Effects.Volume.1/LP/DH-349LP.hdr",
+      "rel": "dosch/Dosch.Design.HDRI.Chrome.Studio.Effects.Volume.1/LP/DH-349LP.hdr",
+      "cat": "studio_soft",
+      "width": 2048,
+      "height": 2048,
+      "mean": 6504.784485388143,
+      "max": 17150,
+      "std": 6798.573392769265
+    },
+    {
+      "abs": "public/assets/hdri/dosch/Dosch.Design.HDRI.Chrome.Studio.Effects.Volume.1/LP/DH-350LP.hdr",
+      "rel": "dosch/Dosch.Design.HDRI.Chrome.Studio.Effects.Volume.1/LP/DH-350LP.hdr",
+      "cat": "studio_soft",
+      "width": 2048,
+      "height": 2048,
+      "mean": 5004.1532842880115,
+      "max": 16845,
+      "std": 6076.962002670312
+    },
+    {
+      "abs": "public/assets/hdri/dosch/Dosch.Design.HDRI.Chrome.Studio.Effects.Volume.1/LP/DH-353LP.hdr",
+      "rel": "dosch/Dosch.Design.HDRI.Chrome.Studio.Effects.Volume.1/LP/DH-353LP.hdr",
+      "cat": "studio_soft",
+      "width": 2048,
+      "height": 2048,
+      "mean": 5408.8000139143805,
+      "max": 17279,
+      "std": 6338.862096656728
+    },
+    {
+      "abs": "public/assets/hdri/dosch/Dosch.Design.HDRI.Chrome.Studio.Effects.Volume.1/LP/DH-358LP.hdr",
+      "rel": "dosch/Dosch.Design.HDRI.Chrome.Studio.Effects.Volume.1/LP/DH-358LP.hdr",
+      "cat": "studio_soft",
+      "width": 2048,
+      "height": 2048,
+      "mean": 5677.511198494785,
+      "max": 17660,
+      "std": 7143.506030363032
+    },
+    {
+      "abs": "public/assets/hdri/dosch/Dosch.Design.HDRI.Chrome.Studio.Effects.Volume.1/LP/DH-360LP.hdr",
+      "rel": "dosch/Dosch.Design.HDRI.Chrome.Studio.Effects.Volume.1/LP/DH-360LP.hdr",
+      "cat": "studio_soft",
+      "width": 2048,
+      "height": 2048,
+      "mean": 6814.964766071809,
+      "max": 17548,
+      "std": 7306.3386116713
+    },
+    {
+      "abs": "public/assets/hdri/dosch/Dosch.Design.HDRI.Chrome.Studio.Effects.Volume.1/LP/DH-369LP.hdr",
+      "rel": "dosch/Dosch.Design.HDRI.Chrome.Studio.Effects.Volume.1/LP/DH-369LP.hdr",
+      "cat": "studio_soft",
+      "width": 2048,
+      "height": 2048,
+      "mean": 8449.918235502586,
+      "max": 17917,
+      "std": 7725.5820685043645
+    },
+    {
+      "abs": "public/assets/hdri/dosch/Dosch.Design.HDRI.Chrome.Studio.Effects.Volume.1/LP/DH-375LP.hdr",
+      "rel": "dosch/Dosch.Design.HDRI.Chrome.Studio.Effects.Volume.1/LP/DH-375LP.hdr",
+      "cat": "studio_soft",
+      "width": 2048,
+      "height": 2048,
+      "mean": 11153.527640490023,
+      "max": 16553.0942,
+      "std": 5204.419561127947
+    },
+    {
+      "abs": "public/assets/hdri/dosch/Dosch.Design.HDRI.Chrome.Studio.Effects.Volume.1/LP/DH-413LP.hdr",
+      "rel": "dosch/Dosch.Design.HDRI.Chrome.Studio.Effects.Volume.1/LP/DH-413LP.hdr",
+      "cat": "studio_soft",
+      "width": 2048,
+      "height": 2048,
+      "mean": 5134.917162389791,
+      "max": 16122.1932,
+      "std": 4711.246899991097
+    },
+    {
+      "abs": "public/assets/hdri/dosch/Dosch.Design.HDRI.Chrome.Studio.Effects.Volume.1/LP/DH-414LP.hdr",
+      "rel": "dosch/Dosch.Design.HDRI.Chrome.Studio.Effects.Volume.1/LP/DH-414LP.hdr",
+      "cat": "studio_soft",
+      "width": 2048,
+      "height": 2048,
+      "mean": 4616.568209876014,
+      "max": 16117.3358,
+      "std": 4684.065785608231
+    },
+    {
+      "abs": "public/assets/hdri/dosch/Dosch.Design.HDRI.Chrome.Studio.Effects.Volume.1/LP/DH-415LP.hdr",
+      "rel": "dosch/Dosch.Design.HDRI.Chrome.Studio.Effects.Volume.1/LP/DH-415LP.hdr",
+      "cat": "studio_soft",
+      "width": 2048,
+      "height": 2048,
+      "mean": 9374.159668593193,
+      "max": 15645.088,
+      "std": 5483.576357598334
+    },
+    {
+      "abs": "public/assets/hdri/dosch/Dosch.Design.HDRI.Chrome.Studio.Effects.Volume.1/LP/DH-417LP.hdr",
+      "rel": "dosch/Dosch.Design.HDRI.Chrome.Studio.Effects.Volume.1/LP/DH-417LP.hdr",
+      "cat": "studio_soft",
+      "width": 2048,
+      "height": 2048,
+      "mean": 10626.720384053633,
+      "max": 15590.780599999998,
+      "std": 5279.311610980898
+    },
+    {
+      "abs": "public/assets/hdri/dosch/Dosch.Design.HDRI.Chrome.Studio.Effects.Volume.1/LP/DH-430LP.hdr",
+      "rel": "dosch/Dosch.Design.HDRI.Chrome.Studio.Effects.Volume.1/LP/DH-430LP.hdr",
+      "cat": "studio_soft",
+      "width": 2048,
+      "height": 2048,
+      "mean": 10556.62124358671,
+      "max": 16299.0814,
+      "std": 6803.113789702921
+    },
+    {
+      "abs": "public/assets/hdri/dosch/Dosch.Design.HDRI.Chrome.Studio.Effects.Volume.1/LP/DH-444LP.hdr",
+      "rel": "dosch/Dosch.Design.HDRI.Chrome.Studio.Effects.Volume.1/LP/DH-444LP.hdr",
+      "cat": "studio_soft",
+      "width": 2048,
+      "height": 2048,
+      "mean": 6117.035352806791,
+      "max": 16688.7318,
+      "std": 6343.529373269205
+    },
+    {
+      "abs": "public/assets/hdri/dosch/Dosch.Design.HDRI.Chrome.Studio.Effects.Volume.1/LT/DH-301LT.hdr",
+      "rel": "dosch/Dosch.Design.HDRI.Chrome.Studio.Effects.Volume.1/LT/DH-301LT.hdr",
+      "cat": "studio_soft",
+      "width": 512,
+      "height": 512,
+      "mean": 10637.588665649886,
+      "max": 16444,
+      "std": 5311.331443385682
+    },
+    {
+      "abs": "public/assets/hdri/dosch/Dosch.Design.HDRI.Chrome.Studio.Effects.Volume.1/LT/DH-306LT.hdr",
+      "rel": "dosch/Dosch.Design.HDRI.Chrome.Studio.Effects.Volume.1/LT/DH-306LT.hdr",
+      "cat": "studio_soft",
+      "width": 512,
+      "height": 512,
+      "mean": 11537.001618072985,
+      "max": 16869,
+      "std": 5401.129096464715
+    },
+    {
+      "abs": "public/assets/hdri/dosch/Dosch.Design.HDRI.Chrome.Studio.Effects.Volume.1/LT/DH-320LT.hdr",
+      "rel": "dosch/Dosch.Design.HDRI.Chrome.Studio.Effects.Volume.1/LT/DH-320LT.hdr",
+      "cat": "studio_soft",
+      "width": 512,
+      "height": 512,
+      "mean": 7498.602003267473,
+      "max": 16664.339,
+      "std": 7728.387083018177
+    },
+    {
+      "abs": "public/assets/hdri/dosch/Dosch.Design.HDRI.Chrome.Studio.Effects.Volume.1/LT/DH-341LT.hdr",
+      "rel": "dosch/Dosch.Design.HDRI.Chrome.Studio.Effects.Volume.1/LT/DH-341LT.hdr",
+      "cat": "studio_soft",
+      "width": 512,
+      "height": 512,
+      "mean": 10492.929679597932,
+      "max": 15524,
+      "std": 6011.695979713227
+    },
+    {
+      "abs": "public/assets/hdri/hdrimaps/HDRI/Auditorium/Auditorium-SkyDome.hdr",
+      "rel": "hdrimaps/HDRI/Auditorium/Auditorium-SkyDome.hdr",
+      "cat": "indoor_arch",
+      "width": 1400,
+      "height": 700,
+      "mean": 5861.717281668113,
+      "max": 21213.999999999996,
+      "std": 6452.34612424317
+    },
+    {
+      "abs": "public/assets/hdri/hdrimaps/HDRI/Bathroom/Bathroom-SkyDome.hdr",
+      "rel": "hdrimaps/HDRI/Bathroom/Bathroom-SkyDome.hdr",
+      "cat": "indoor_arch",
+      "width": 1400,
+      "height": 700,
+      "mean": 6776.937378294574,
+      "max": 21343,
+      "std": 6816.638488463818
+    },
+    {
+      "abs": "public/assets/hdri/hdrimaps/HDRI/Building-Brick/BuildingBrick-SkyDome.hdr",
+      "rel": "hdrimaps/HDRI/Building-Brick/BuildingBrick-SkyDome.hdr",
+      "cat": "industrial_urban",
+      "width": 1400,
+      "height": 700,
+      "mean": 7082.303719428573,
+      "max": 20141.936,
+      "std": 7535.4301565025025
+    },
+    {
+      "abs": "public/assets/hdri/hdrimaps/HDRI/Building-Marble/BuildingMarble-SkyDome.hdr",
+      "rel": "hdrimaps/HDRI/Building-Marble/BuildingMarble-SkyDome.hdr",
+      "cat": "outdoor_sky",
+      "width": 1400,
+      "height": 700,
+      "mean": 5344.578059763178,
+      "max": 17540,
+      "std": 5569.515397355972
+    },
+    {
+      "abs": "public/assets/hdri/hdrimaps/HDRI/BusTerminal/BusTerminal-SkyDome.hdr",
+      "rel": "hdrimaps/HDRI/BusTerminal/BusTerminal-SkyDome.hdr",
+      "cat": "industrial_urban",
+      "width": 1400,
+      "height": 700,
+      "mean": 5305.781576063133,
+      "max": 20989,
+      "std": 5808.789180549966
+    },
+    {
+      "abs": "public/assets/hdri/hdrimaps/HDRI/BusTerminal2/BusTerminal2-SkyDome.hdr",
+      "rel": "hdrimaps/HDRI/BusTerminal2/BusTerminal2-SkyDome.hdr",
+      "cat": "outdoor_sky",
+      "width": 1400,
+      "height": 700,
+      "mean": 5824.4740142069895,
+      "max": 22587.999999999996,
+      "std": 6101.0473235955615
+    },
+    {
+      "abs": "public/assets/hdri/hdrimaps/HDRI/Cafeteria/Cafeteria-SkyDome.hdr",
+      "rel": "hdrimaps/HDRI/Cafeteria/Cafeteria-SkyDome.hdr",
+      "cat": "outdoor_sky",
+      "width": 1400,
+      "height": 700,
+      "mean": 6252.08839153622,
+      "max": 18271,
+      "std": 6370.621730872237
+    },
+    {
+      "abs": "public/assets/hdri/hdrimaps/HDRI/CarWash/CarWash-SkyDome.hdr",
+      "rel": "hdrimaps/HDRI/CarWash/CarWash-SkyDome.hdr",
+      "cat": "industrial_urban",
+      "width": 1400,
+      "height": 700,
+      "mean": 5202.123493229896,
+      "max": 22238,
+      "std": 5483.535770860045
+    },
+    {
+      "abs": "public/assets/hdri/hdrimaps/HDRI/CarWash-Manual/CarWashManual-SkyDome.hdr",
+      "rel": "hdrimaps/HDRI/CarWash-Manual/CarWashManual-SkyDome.hdr",
+      "cat": "industrial_urban",
+      "width": 1400,
+      "height": 700,
+      "mean": 5772.756865306123,
+      "max": 20789,
+      "std": 5892.596703690721
+    },
+    {
+      "abs": "public/assets/hdri/hdrimaps/HDRI/Cement-Lobby/CementLobby-SkyDome.hdr",
+      "rel": "hdrimaps/HDRI/Cement-Lobby/CementLobby-SkyDome.hdr",
+      "cat": "industrial_urban",
+      "width": 1400,
+      "height": 700,
+      "mean": 5957.758549351633,
+      "max": 21343,
+      "std": 6373.381443205893
+    },
+    {
+      "abs": "public/assets/hdri/hdrimaps/HDRI/Chandelier/Chandelier-SkyDome.hdr",
+      "rel": "hdrimaps/HDRI/Chandelier/Chandelier-SkyDome.hdr",
+      "cat": "outdoor_sky",
+      "width": 1400,
+      "height": 700,
+      "mean": 5858.311806122449,
+      "max": 19515.999999999996,
+      "std": 5943.102517098992
+    },
+    {
+      "abs": "public/assets/hdri/hdrimaps/HDRI/Chicago-Loop/ChicagoLoop-SkyDome.hdr",
+      "rel": "hdrimaps/HDRI/Chicago-Loop/ChicagoLoop-SkyDome.hdr",
+      "cat": "outdoor_sky",
+      "width": 1400,
+      "height": 700,
+      "mean": 5971.299236808456,
+      "max": 18141.999999999996,
+      "std": 6204.85505839169
+    },
+    {
+      "abs": "public/assets/hdri/hdrimaps/HDRI/Chicago-Skyline/ChicagoSkyline-SkyDome.hdr",
+      "rel": "hdrimaps/HDRI/Chicago-Skyline/ChicagoSkyline-SkyDome.hdr",
+      "cat": "outdoor_sky",
+      "width": 1400,
+      "height": 700,
+      "mean": 4591.871937188615,
+      "max": 19294.999999999996,
+      "std": 4931.949585737302
+    },
+    {
+      "abs": "public/assets/hdri/hdrimaps/HDRI/Church/Church-SkyDome.hdr",
+      "rel": "hdrimaps/HDRI/Church/Church-SkyDome.hdr",
+      "cat": "indoor_arch",
+      "width": 1400,
+      "height": 700,
+      "mean": 6036.949666886104,
+      "max": 20078,
+      "std": 6148.5694404291025
+    },
+    {
+      "abs": "public/assets/hdri/hdrimaps/HDRI/Church-Awning/ChurchAwning-SkyDome.hdr",
+      "rel": "hdrimaps/HDRI/Church-Awning/ChurchAwning-SkyDome.hdr",
+      "cat": "indoor_arch",
+      "width": 1400,
+      "height": 700,
+      "mean": 5940.832890274952,
+      "max": 18652,
+      "std": 6234.776955652192
+    },
+    {
+      "abs": "public/assets/hdri/hdrimaps/HDRI/Church-Basement/ChurchBasement-Skydome.hdr",
+      "rel": "hdrimaps/HDRI/Church-Basement/ChurchBasement-Skydome.hdr",
+      "cat": "indoor_arch",
+      "width": 1400,
+      "height": 700,
+      "mean": 3997.545713896377,
+      "max": 15492,
+      "std": 4376.604353450751
+    },
+    {
+      "abs": "public/assets/hdri/hdrimaps/HDRI/ClockTower/ClockTower-SkyDome.hdr",
+      "rel": "hdrimaps/HDRI/ClockTower/ClockTower-SkyDome.hdr",
+      "cat": "outdoor_sky",
+      "width": 1400,
+      "height": 700,
+      "mean": 6603.649898795244,
+      "max": 18837,
+      "std": 6871.156957517112
+    },
+    {
+      "abs": "public/assets/hdri/hdrimaps/HDRI/Closet/Closet-SkyDome.hdr",
+      "rel": "hdrimaps/HDRI/Closet/Closet-SkyDome.hdr",
+      "cat": "indoor_arch",
+      "width": 1400,
+      "height": 700,
+      "mean": 5950.331788149541,
+      "max": 18134.625799999998,
+      "std": 6109.877553031585
+    },
+    {
+      "abs": "public/assets/hdri/hdrimaps/HDRI/ConstructionWood/ConstructionWood-SkyDome.hdr",
+      "rel": "hdrimaps/HDRI/ConstructionWood/ConstructionWood-SkyDome.hdr",
+      "cat": "outdoor_sky",
+      "width": 1400,
+      "height": 700,
+      "mean": 5907.13681606336,
+      "max": 21343,
+      "std": 5997.880258020709
+    },
+    {
+      "abs": "public/assets/hdri/hdrimaps/HDRI/Dock/Dock-SkyDome.hdr",
+      "rel": "hdrimaps/HDRI/Dock/Dock-SkyDome.hdr",
+      "cat": "industrial_urban",
+      "width": 1400,
+      "height": 700,
+      "mean": 5762.174917636993,
+      "max": 19121.4606,
+      "std": 5882.856403150299
+    },
+    {
+      "abs": "public/assets/hdri/hdrimaps/HDRI/DormHallway/DormHallway-SkyDome.hdr",
+      "rel": "hdrimaps/HDRI/DormHallway/DormHallway-SkyDome.hdr",
+      "cat": "outdoor_sky",
+      "width": 1400,
+      "height": 700,
+      "mean": 6496.8537720264485,
+      "max": 19563.5792,
+      "std": 6512.840209643573
+    },
+    {
+      "abs": "public/assets/hdri/hdrimaps/HDRI/DrywallDoor/DrywallDoorway-SkyDome.hdr",
+      "rel": "hdrimaps/HDRI/DrywallDoor/DrywallDoorway-SkyDome.hdr",
+      "cat": "outdoor_sky",
+      "width": 1400,
+      "height": 700,
+      "mean": 6392.77787587949,
+      "max": 19811.7104,
+      "std": 6468.938655864483
+    },
+    {
+      "abs": "public/assets/hdri/hdrimaps/HDRI/ElevLobbyOutside/ElevLobbyOutside-SkyDome.hdr",
+      "rel": "hdrimaps/HDRI/ElevLobbyOutside/ElevLobbyOutside-SkyDome.hdr",
+      "cat": "outdoor_sky",
+      "width": 1400,
+      "height": 700,
+      "mean": 5614.5989224489795,
+      "max": 22126,
+      "std": 5822.850305139689
+    },
+    {
+      "abs": "public/assets/hdri/hdrimaps/HDRI/Elevator/Elevator-SkyDome.hdr",
+      "rel": "hdrimaps/HDRI/Elevator/Elevator-SkyDome.hdr",
+      "cat": "indoor_arch",
+      "width": 1400,
+      "height": 700,
+      "mean": 5686.828088789396,
+      "max": 19063.625799999998,
+      "std": 5766.779469491144
+    },
+    {
+      "abs": "public/assets/hdri/hdrimaps/HDRI/ElevatorLobby2/ElevatorLobby2-SkyDome.hdr",
+      "rel": "hdrimaps/HDRI/ElevatorLobby2/ElevatorLobby2-SkyDome.hdr",
+      "cat": "outdoor_sky",
+      "width": 1400,
+      "height": 700,
+      "mean": 6331.7316612244895,
+      "max": 17733,
+      "std": 6512.437904346404
+    },
+    {
+      "abs": "public/assets/hdri/hdrimaps/HDRI/Foyer/Foyer-SkyDome.hdr",
+      "rel": "hdrimaps/HDRI/Foyer/Foyer-SkyDome.hdr",
+      "cat": "indoor_arch",
+      "width": 1400,
+      "height": 700,
+      "mean": 6236.444104585419,
+      "max": 22279.7312,
+      "std": 6337.386280183426
+    },
+    {
+      "abs": "public/assets/hdri/hdrimaps/HDRI/Garage/Garage-SkyDome.hdr",
+      "rel": "hdrimaps/HDRI/Garage/Garage-SkyDome.hdr",
+      "cat": "indoor_arch",
+      "width": 1400,
+      "height": 700,
+      "mean": 4943.584128452293,
+      "max": 18141.999999999996,
+      "std": 5120.007840601575
+    },
+    {
+      "abs": "public/assets/hdri/hdrimaps/HDRI/GasStation-01/GasStation-SkyDome.hdr",
+      "rel": "hdrimaps/HDRI/GasStation-01/GasStation-SkyDome.hdr",
+      "cat": "industrial_urban",
+      "width": 1400,
+      "height": 700,
+      "mean": 5486.1160725719765,
+      "max": 21213.999999999996,
+      "std": 5765.057985714615
+    },
+    {
+      "abs": "public/assets/hdri/hdrimaps/HDRI/GlassDiningTable/GlassDiningTable-SkyDome.hdr",
+      "rel": "hdrimaps/HDRI/GlassDiningTable/GlassDiningTable-SkyDome.hdr",
+      "cat": "outdoor_sky",
+      "width": 1400,
+      "height": 700,
+      "mean": 5971.371872028523,
+      "max": 20190,
+      "std": 6071.361934352186
+    },
+    {
+      "abs": "public/assets/hdri/hdrimaps/HDRI/HallBrickSteel/HallBrickSteel-SkyDome.hdr",
+      "rel": "hdrimaps/HDRI/HallBrickSteel/HallBrickSteel-SkyDome.hdr",
+      "cat": "outdoor_sky",
+      "width": 1400,
+      "height": 700,
+      "mean": 6622.953171435916,
+      "max": 20190,
+      "std": 6779.478487207762
+    },
+    {
+      "abs": "public/assets/hdri/hdrimaps/HDRI/ILstateCorner/ILstateCorner-SkyDome.hdr",
+      "rel": "hdrimaps/HDRI/ILstateCorner/ILstateCorner-SkyDome.hdr",
+      "cat": "outdoor_sky",
+      "width": 1400,
+      "height": 700,
+      "mean": 6149.023571035725,
+      "max": 19166,
+      "std": 6232.742888016409
+    },
+    {
+      "abs": "public/assets/hdri/hdrimaps/HDRI/ILstateEntrance/ILstateEntrance-SkyDome.hdr",
+      "rel": "hdrimaps/HDRI/ILstateEntrance/ILstateEntrance-SkyDome.hdr",
+      "cat": "outdoor_sky",
+      "width": 1400,
+      "height": 700,
+      "mean": 5988.9358954678855,
+      "max": 18741,
+      "std": 6098.273115002918
+    },
+    {
+      "abs": "public/assets/hdri/hdrimaps/HDRI/IndustrialKitchen/IndustrialKitchen-SkyDome.hdr",
+      "rel": "hdrimaps/HDRI/IndustrialKitchen/IndustrialKitchen-SkyDome.hdr",
+      "cat": "outdoor_sky",
+      "width": 1400,
+      "height": 700,
+      "mean": 5484.266499725636,
+      "max": 19755.4556,
+      "std": 5647.286678045506
+    },
+    {
+      "abs": "public/assets/hdri/hdrimaps/HDRI/Kitchen/Kitchen-SkyDome.hdr",
+      "rel": "hdrimaps/HDRI/Kitchen/Kitchen-SkyDome.hdr",
+      "cat": "indoor_arch",
+      "width": 1400,
+      "height": 700,
+      "mean": 4629.158774576429,
+      "max": 18492,
+      "std": 4830.187005818769
+    },
+    {
+      "abs": "public/assets/hdri/hdrimaps/HDRI/Kitchen-Cali/KitchenCali-SkyDome.hdr",
+      "rel": "hdrimaps/HDRI/Kitchen-Cali/KitchenCali-SkyDome.hdr",
+      "cat": "indoor_arch",
+      "width": 1400,
+      "height": 700,
+      "mean": 5040.436692153549,
+      "max": 20914.077999999998,
+      "std": 5281.663617166729
+    },
+    {
+      "abs": "public/assets/hdri/hdrimaps/HDRI/LavaLamp/LavaLamp-SkyDome.hdr",
+      "rel": "hdrimaps/HDRI/LavaLamp/LavaLamp-SkyDome.hdr",
+      "cat": "outdoor_sky",
+      "width": 1400,
+      "height": 700,
+      "mean": 6470.008009635692,
+      "max": 20319,
+      "std": 6704.680694179101
+    },
+    {
+      "abs": "public/assets/hdri/hdrimaps/HDRI/Library/Library-SkyDome.hdr",
+      "rel": "hdrimaps/HDRI/Library/Library-SkyDome.hdr",
+      "cat": "indoor_arch",
+      "width": 1400,
+      "height": 700,
+      "mean": 6155.864818359173,
+      "max": 17993.8306,
+      "std": 6479.810334134762
+    },
+    {
+      "abs": "public/assets/hdri/hdrimaps/HDRI/Library-Window/LibraryWindow-SkyDome.hdr",
+      "rel": "hdrimaps/HDRI/Library-Window/LibraryWindow-SkyDome.hdr",
+      "cat": "indoor_arch",
+      "width": 1400,
+      "height": 700,
+      "mean": 5557.51670288428,
+      "max": 17381.2466,
+      "std": 5962.776631696871
+    },
+    {
+      "abs": "public/assets/hdri/hdrimaps/HDRI/LobbyCorner/LobbyCorner-SkyDome.hdr",
+      "rel": "hdrimaps/HDRI/LobbyCorner/LobbyCorner-SkyDome.hdr",
+      "cat": "outdoor_sky",
+      "width": 1400,
+      "height": 700,
+      "mean": 5490.634170915433,
+      "max": 19850.3444,
+      "std": 5656.911655050182
+    },
+    {
+      "abs": "public/assets/hdri/hdrimaps/HDRI/Mall-Lobby/MallLobby-SkyDome.hdr",
+      "rel": "hdrimaps/HDRI/Mall-Lobby/MallLobby-SkyDome.hdr",
+      "cat": "indoor_arch",
+      "width": 1400,
+      "height": 700,
+      "mean": 6304.835672230532,
+      "max": 18941,
+      "std": 6397.31983489083
+    },
+    {
+      "abs": "public/assets/hdri/hdrimaps/HDRI/ParkTemple/ParkTemple-SkyDome.hdr",
+      "rel": "hdrimaps/HDRI/ParkTemple/ParkTemple-SkyDome.hdr",
+      "cat": "outdoor_sky",
+      "width": 1400,
+      "height": 700,
+      "mean": 5915.424543832648,
+      "max": 18271,
+      "std": 6021.175285035917
+    },
+    {
+      "abs": "public/assets/hdri/hdrimaps/HDRI/ParkingLot-02/ParkingLot2-SkyDome.hdr",
+      "rel": "hdrimaps/HDRI/ParkingLot-02/ParkingLot2-SkyDome.hdr",
+      "cat": "outdoor_sky",
+      "width": 1400,
+      "height": 700,
+      "mean": 5536.954505129559,
+      "max": 20454.999999999996,
+      "std": 5567.544948798821
+    },
+    {
+      "abs": "public/assets/hdri/hdrimaps/HDRI/ParkingLot-Cali/ParkingLotCali-SkyDome.hdr",
+      "rel": "hdrimaps/HDRI/ParkingLot-Cali/ParkingLotCali-SkyDome.hdr",
+      "cat": "outdoor_sky",
+      "width": 1400,
+      "height": 700,
+      "mean": 5264.623575385989,
+      "max": 19294.999999999996,
+      "std": 5359.324352353213
+    },
+    {
+      "abs": "public/assets/hdri/hdrimaps/HDRI/PlayGround-01/PlayGround01-SkyDome.hdr",
+      "rel": "hdrimaps/HDRI/PlayGround-01/PlayGround01-SkyDome.hdr",
+      "cat": "outdoor_sky",
+      "width": 1400,
+      "height": 700,
+      "mean": 6229.7525124880995,
+      "max": 18271,
+      "std": 6382.333436245245
+    },
+    {
+      "abs": "public/assets/hdri/hdrimaps/HDRI/RedDoors/RedDoors-SkyDome.hdr",
+      "rel": "hdrimaps/HDRI/RedDoors/RedDoors-SkyDome.hdr",
+      "cat": "outdoor_sky",
+      "width": 1400,
+      "height": 700,
+      "mean": 5792.416700261587,
+      "max": 18061.0144,
+      "std": 5973.260129595833
+    },
+    {
+      "abs": "public/assets/hdri/hdrimaps/HDRI/Scaffolding/Scaffolding-SkyDome.hdr",
+      "rel": "hdrimaps/HDRI/Scaffolding/Scaffolding-SkyDome.hdr",
+      "cat": "outdoor_sky",
+      "width": 1400,
+      "height": 700,
+      "mean": 6655.213024494748,
+      "max": 17247,
+      "std": 6809.999153702513
+    },
+    {
+      "abs": "public/assets/hdri/hdrimaps/HDRI/StairWell/StairWell-SkyDome.hdr",
+      "rel": "hdrimaps/HDRI/StairWell/StairWell-SkyDome.hdr",
+      "cat": "outdoor_sky",
+      "width": 1400,
+      "height": 700,
+      "mean": 6865.30827755102,
+      "max": 22367,
+      "std": 6904.193887944358
+    },
+    {
+      "abs": "public/assets/hdri/hdrimaps/HDRI/StairWell2/StairWell2-SkyDome.hdr",
+      "rel": "hdrimaps/HDRI/StairWell2/StairWell2-SkyDome.hdr",
+      "cat": "outdoor_sky",
+      "width": 1400,
+      "height": 700,
+      "mean": 6326.131806586534,
+      "max": 18550.354199999998,
+      "std": 6389.223704814622
+    },
+    {
+      "abs": "public/assets/hdri/hdrimaps/HDRI/StoneMall/StoneMall-SkyDome.hdr",
+      "rel": "hdrimaps/HDRI/StoneMall/StoneMall-SkyDome.hdr",
+      "cat": "outdoor_sky",
+      "width": 1400,
+      "height": 700,
+      "mean": 6043.274972713456,
+      "max": 24415,
+      "std": 6421.446192678938
+    },
+    {
+      "abs": "public/assets/hdri/hdrimaps/HDRI/TrainStation/TrainStation-SkyDome.hdr",
+      "rel": "hdrimaps/HDRI/TrainStation/TrainStation-SkyDome.hdr",
+      "cat": "outdoor_sky",
+      "width": 1400,
+      "height": 700,
+      "mean": 5186.788160005062,
+      "max": 18271,
+      "std": 5318.575369203005
+    },
+    {
+      "abs": "public/assets/hdri/hdrimaps/HDRI/TrainStation-02/TrainStation2-SkyDome.hdr",
+      "rel": "hdrimaps/HDRI/TrainStation-02/TrainStation2-SkyDome.hdr",
+      "cat": "outdoor_sky",
+      "width": 1400,
+      "height": 700,
+      "mean": 5385.693564285714,
+      "max": 19675.999999999996,
+      "std": 5540.7329366891945
+    },
+    {
+      "abs": "public/assets/hdri/hdrimaps/HDRI/TriGrid/TriGrid-SkyDome.hdr",
+      "rel": "hdrimaps/HDRI/TriGrid/TriGrid-SkyDome.hdr",
+      "cat": "outdoor_sky",
+      "width": 1400,
+      "height": 700,
+      "mean": 6391.56415967363,
+      "max": 19764.999999999996,
+      "std": 6524.651929887261
+    },
+    {
+      "abs": "public/assets/hdri/hdrimaps/HDRI/TriRainbow/TriRainbow-SkyDome.hdr",
+      "rel": "hdrimaps/HDRI/TriRainbow/TriRainbow-SkyDome.hdr",
+      "cat": "outdoor_sky",
+      "width": 1400,
+      "height": 700,
+      "mean": 6027.786547029112,
+      "max": 19009.3324,
+      "std": 6210.561954540207
+    },
+    {
+      "abs": "public/assets/hdri/hdrimaps/HDRI/TruckTrailer/TruckTrailer-SkyDome.hdr",
+      "rel": "hdrimaps/HDRI/TruckTrailer/TruckTrailer-SkyDome.hdr",
+      "cat": "outdoor_sky",
+      "width": 1400,
+      "height": 700,
+      "mean": 6256.415489070565,
+      "max": 20078,
+      "std": 6400.856231948488
+    },
+    {
+      "abs": "public/assets/hdri/hdrimaps/HDRI/Window-Garage/WindowGarage-SkyDome.hdr",
+      "rel": "hdrimaps/HDRI/Window-Garage/WindowGarage-SkyDome.hdr",
+      "cat": "indoor_arch",
+      "width": 1400,
+      "height": 700,
+      "mean": 5700.3619685224385,
+      "max": 18271,
+      "std": 6184.213962666399
+    },
+    {
+      "abs": "public/assets/hdri/hdrimaps/HDRI/_miscExtras/outSidePatio-Sphere.hdr",
+      "rel": "hdrimaps/HDRI/_miscExtras/outSidePatio-Sphere.hdr",
+      "cat": "outdoor_sky",
+      "width": 550,
+      "height": 550,
+      "mean": 9288.972742704302,
+      "max": 17455.3536,
+      "std": 5240.8579586596015
+    }
+  ],
+  "bad": []
+}
